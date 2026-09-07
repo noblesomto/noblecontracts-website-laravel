@@ -40,7 +40,7 @@
     <div id="nav-v2-menu" class="lg:hidden hidden border-t border-border-soft">
         <nav class="container-nb flex flex-col py-4">
             <a href="/" class="py-2">Home</a>
-            <div>
+            <div class="nav-v2-dropdown-group">
                 <div class="flex items-center justify-between py-2">
                     <a href="/services">Services</a>
                     <button type="button" class="nav-v2-dropdown-btn p-2" aria-label="Toggle Services submenu" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>

@@ -12,7 +12,8 @@
 
     document.querySelectorAll('.nav-v2-dropdown-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var submenu = btn.parentElement.querySelector('.nav-v2-dropdown-menu');
+        var group = btn.closest('.nav-v2-dropdown-group');
+        var submenu = group && group.querySelector('.nav-v2-dropdown-menu');
         if (!submenu) return;
         var isOpen = submenu.classList.toggle('is-open');
         btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
