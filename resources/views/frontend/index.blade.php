@@ -256,83 +256,35 @@
 
 
 <!-- Testimonial Area Start -->
-<section class="testimonial-area-two rel z-1 mt-130 mb-120">
-    <div class="container for-middle-border">
-        <div class="row justify-content-between align-items-center pb-90 rpb-35 wow fadeInUp delay-0-2s">
-            <div class="col-xl-7 col-lg-8">
-                <div class="section-title">
-                    <span class="sub-title mb-15">Clients Testimonials</span>
-                    <h2>Clients feedback</h2>
-                </div>
+<section class="py-20 border-t border-border-soft">
+    <div class="container-nb">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-12" data-reveal>
+            <div>
+                <span class="text-accent uppercase text-sm font-semibold">Clients Testimonials</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3">Clients feedback</h2>
             </div>
-            <div class="col-lg-4">
-               <div class="slider-arrow-btns text-lg-end">
-                    <button class="work-prev"><i class="far fa-arrow-left"></i></button>
-                    <button class="work-next"><i class="far fa-arrow-right"></i></button>
-                </div>
+            <div class="flex gap-3">
+                <button class="work-prev w-11 h-11 rounded-full border border-border-soft flex items-center justify-center" aria-label="Previous testimonial"><i class="far fa-arrow-left"></i></button>
+                <button class="work-next w-11 h-11 rounded-full border border-border-soft flex items-center justify-center" aria-label="Next testimonial"><i class="far fa-arrow-right"></i></button>
             </div>
         </div>
-        <div class="testimonial-two-active">
-            <div class="testimonial-item-two wow fadeInUp delay-0-2s">
-                <div class="testimonial-author pb-4">
-                </div>
-                <div class="testimonial-content">
-                    <p>Professional, creative, and highly responsive. Our new site has made it much easier for clients to learn about our services and get in touch. Highly recommended.</p>
-                    <div class="author-description">
-                        <span class="h5">Joel Hong</span>
-                        <span class="designation"><a href="/our-work#jj-homes-london">CEO, JJ Homes Management</a></span>
+        <div id="testimonial-carousel-v2" class="overflow-hidden">
+            <div class="embla__container flex gap-8">
+                @foreach ([
+                    ['quote' => 'Professional, creative, and highly responsive. Our new site has made it much easier for clients to learn about our services and get in touch. Highly recommended.', 'name' => 'Joel Hong', 'role' => 'CEO, JJ Homes Management', 'href' => '/our-work#jj-homes-london'],
+                    ['quote' => 'They didn’t just design a website—they built a digital platform that supports our growth. The attention to detail and ongoing support have been outstanding.', 'name' => 'Miriam', 'role' => 'Manager, Furnished Apartments', 'href' => '/our-work#furnished-apartments'],
+                    ['quote' => 'I was impressed by how quickly they understood our needs and turned them into a beautiful, functional website. We’ve already seen an increase in inquiries from new customers.', 'name' => 'Mr Okey', 'role' => 'Founder, Oraclefilms Tv', 'href' => '/our-work#oraclefilms-tv'],
+                    ['quote' => 'The team delivered a website that perfectly reflects our brand and makes it easy for clients to connect with us. From start to finish, the process was smooth and professional.', 'name' => 'Jerry', 'role' => 'Director, Marketplace Naija', 'href' => '/our-work#marketplace-group'],
+                    ['quote' => 'Their expertise transformed our outdated website into a modern, client-friendly platform. We’ve received so many compliments from partners and customers alike.', 'name' => 'Collins', 'role' => 'Director, Quick Errands', 'href' => '/our-work#quickerrands'],
+                ] as $t)
+                <div class="min-w-0 flex-[0_0_100%] md:flex-[0_0_48%]">
+                    <p class="text-lg text-ink/80">&ldquo;{{ $t['quote'] }}&rdquo;</p>
+                    <div class="mt-4">
+                        <span class="font-bold block">{{ $t['name'] }}</span>
+                        <a href="{{ $t['href'] }}" class="text-ink/60 text-sm hover:text-accent">{{ $t['role'] }}</a>
                     </div>
                 </div>
-            </div>
-            <div class="testimonial-item-two wow fadeInUp delay-0-4s">
-                <div class="testimonial-author pb-4">
-
-                </div>
-                <div class="testimonial-content">
-                    <p>They didn’t just design a website—they built a digital platform that supports our growth. The attention to detail and ongoing support have been outstanding.</p>
-                    <div class="author-description">
-                        <span class="h5">Miriam</span>
-                        <span class="designation"><a href="/our-work#furnished-apartments">Manager, Furnished Apartments</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item-two wow fadeInUp delay-0-2s">
-                <div class="testimonial-author pb-4">
-
-                </div>
-                <div class="testimonial-content">
-                    <p>I was impressed by how quickly they understood our needs and turned them into a beautiful, functional website. We’ve already seen an increase in inquiries from new customers.</p>
-                    <div class="author-description">
-                        <span class="h5">Mr Okey</span>
-                        <span class="designation"><a href="/our-work#oraclefilms-tv">Founder, Oraclefilms Tv</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item-two wow fadeInUp delay-0-4s">
-                <div class="testimonial-author pb-4">
-
-                </div>
-                <div class="testimonial-content">
-                    <p>The team delivered a website that perfectly reflects our brand and makes it easy for clients to connect with us. From start to finish, the process was smooth and professional.</p>
-                    <div class="author-description">
-                        <span class="h5">Jerry</span>
-                        <span class="designation"><a href="/our-work#marketplace-group">Director, Marketplace Naija</a></span>
-                    </div>
-
-                </div>
-            </div>
-            <div class="testimonial-item-two wow fadeInUp delay-0-4s">
-                <div class="testimonial-author pb-4">
-
-                </div>
-                <div class="testimonial-content">
-                    <p>Their expertise transformed our outdated website into a modern, client-friendly platform. We’ve received so many compliments from partners and customers alike.</p>
-                <div class="author-description">
-                    <span class="h5">Collins</span>
-                    <span class="designation"><a href="/our-work#quickerrands">Director, Quick Errands</a></span>
-                </div>
-
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -340,99 +292,75 @@
 <!-- Testimonial Area End -->
 
 <!-- Final CTA start -->
-<section class="call-to-action-area bgc-black pt-80 pb-50">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-xl-7 col-lg-9">
-                <div class="section-title text-white mb-25 wow fadeInUp delay-0-2s animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <h2>Have an Idea Worth Building?</h2>
-                    <p>Whether you're launching a SaaS product, modernising an existing system, automating a business process or exploring what AI can do for your organisation, we can help you turn the idea into working software. Tell us what you're building.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 text-lg-end">
-                <a href="/start-a-project" class="theme-btn style-three mb-30 wow fadeInUp delay-0-4s animated" style="visibility: visible; animation-name: fadeInUp;">Start a Project <i class="fas fa-angle-double-right"></i></a>
-            </div>
+<section class="bg-ink text-white py-16">
+    <div class="container-nb flex flex-wrap items-center justify-between gap-8" data-reveal>
+        <div class="max-w-2xl">
+            <h2 class="text-2xl md:text-3xl font-bold">Have an Idea Worth Building?</h2>
+            <p class="mt-3 text-white/70">Whether you're launching a SaaS product, modernising an existing system, automating a business process or exploring what AI can do for your organisation, we can help you turn the idea into working software. Tell us what you're building.</p>
         </div>
+        <a href="/start-a-project" class="theme-btn" style="background:transparent;border:1px solid #fff;">Start a Project <i class="fas fa-angle-double-right"></i></a>
     </div>
 </section>
 <!-- Final CTA end -->
 
 <!-- Contact Area Start -->
-<section class="contact-area overflow-hidden py-130 bgc-black-with-lighting rel z-1">
-   <div class="container">
-       <div class="row justify-content-between">
-           <div class="col-xl-5 col-lg-6">
-               <div class="contact-info-area text-white rmb-75 wow fadeInLeft delay-0-2s">
-                    <div class="section-title mb-55">
-                        <h2>Have any project on mind! feel free contact with us or <span>say hello</span></h2>
+<section class="bg-ink text-white py-20">
+    <div class="container-nb flex flex-wrap justify-between gap-12">
+        <div class="w-full lg:w-5/12" data-reveal>
+            <h2 class="text-2xl md:text-3xl font-bold mb-8">Have any project on mind! feel free contact with us or <span class="text-accent-cyan">say hello</span></h2>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <i class="fal fa-map-marker-alt text-accent-cyan text-xl"></i>
+                    <div>
+                        <span class="block text-white/60 text-sm">Location</span>
+                        <b class="font-normal">Plot 3 hon Rufus Oyedepo Sangotedo, Lagos</b>
                     </div>
-                    <div class="contact-info-wrap">
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="fal fa-map-marker-alt"></i>
-                            </div>
-                            <div class="content">
-                                <span class="title">Location</span>
-                                <b class="text">Plot 3 hon Rufus Oyedepo Sangotedo, Lagos</b>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="far fa-envelope-open-text"></i>
-                            </div>
-                            <div class="content">
-                                <span class="title">Email Address</span>
-                                <b class="text"><a href="mailto:info@nobleitservices.ng">info@nobleitservices.ng</a></b>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="icon">
-                                <i class="far fa-phone"></i>
-                            </div>
-                            <div class="content">
-                                <span class="title">Phone No</span>
-                                <b class="text"><a href="callto:+234 907 372 9787"> (+234) 907 372 9787</a></b>
-                                <b class="text"><a href="callto:+234 703 152 5786">(+234) 703 152 5786</a></b>
-                            </div>
-                        </div>
+                </div>
+                <div class="flex gap-4">
+                    <i class="far fa-envelope-open-text text-accent-cyan text-xl"></i>
+                    <div>
+                        <span class="block text-white/60 text-sm">Email Address</span>
+                        <b class="font-normal"><a href="mailto:info@nobleitservices.ng" class="hover:text-accent-cyan">info@nobleitservices.ng</a></b>
                     </div>
-               </div>
-           </div>
-           <div class="col-xl-5 col-lg-6">
-               <form id="contact-area-form" class="contact-area-form text-center wow fadeInRight delay-0-2s" name="contact-area-form" action="/contact-us" method="post">
+                </div>
+                <div class="flex gap-4">
+                    <i class="far fa-phone text-accent-cyan text-xl"></i>
+                    <div>
+                        <span class="block text-white/60 text-sm">Phone No</span>
+                        <b class="font-normal block"><a href="callto:+234 907 372 9787" class="hover:text-accent-cyan">(+234) 907 372 9787</a></b>
+                        <b class="font-normal block"><a href="callto:+234 703 152 5786" class="hover:text-accent-cyan">(+234) 703 152 5786</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-5/12" data-reveal>
+            <form id="contact-area-form" class="text-ink bg-white rounded-lg p-8 flex flex-col gap-4" name="contact-area-form" action="/contact-us" method="post">
                 @csrf
-                    <h4>Send us Message</h4>
-                    <label for="full-name" class="visually-hidden">Full Name</label>
-                    <input type="text" id="full-name" name="name" class="form-control" value="" placeholder="Full Name" required="">
-                    <label for="blog-email" class="visually-hidden">Email Address</label>
-                    <input type="email" id="blog-email" name="email" class="form-control" value="" placeholder="Email Address" required="">
-                    <label for="phone" class="visually-hidden">Phone Number</label>
-                    <input type="text" id="phone" name="phone" class="form-control" value="" placeholder="Phone Number">
-                    <label for="select-subject" class="visually-hidden">Subject</label>
-                    <select name="subject" id="select-subject" class="form-control">
-                        <option value="website customize"="">Website customize</option>
-                        <option value="Web Design & Development" selected>Web Design & Development</option>
-                        <option value="Mobile Development">Mobile Development</option>
-                        <option value="SEO">SEO</option>
-                    </select>
-                    <label for="message" class="visually-hidden">Message</label>
-                    <textarea name="message" id="message" class="form-control" rows="2" placeholder="Write Message" required=""></textarea>
-                    <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
-                        @if ($errors->has('g-recaptcha-response'))
-                            <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-                        @endif
-                    <button type="submit" class="theme-btn mt-10">Send messages <i class="fas fa-angle-double-right"></i></button>
-                </form>
-           </div>
-       </div>
-   </div>
-   <div class="contact-shapes">
-       <img class="shape circle" src="{{ asset('frontend/images/shapes/slider-dots.png') }}" loading="lazy" decoding="async" alt="Shape">
-       <img class="shape dots" src="{{ asset('frontend/images/shapes/contact-dots.png') }}" loading="lazy" decoding="async" alt="Shape">
-       <img class="shape wave-line" src="{{ asset('frontend/images/shapes/contact-wave-line.png') }}" loading="lazy" decoding="async" alt="Shape">
-   </div>
+                <h4 class="font-bold text-xl mb-2">Send us Message</h4>
+                <label for="full-name" class="sr-only">Full Name</label>
+                <input type="text" id="full-name" name="name" class="border border-border-soft rounded px-4 py-2" value="" placeholder="Full Name" required>
+                <label for="blog-email" class="sr-only">Email Address</label>
+                <input type="email" id="blog-email" name="email" class="border border-border-soft rounded px-4 py-2" value="" placeholder="Email Address" required>
+                <label for="phone" class="sr-only">Phone Number</label>
+                <input type="text" id="phone" name="phone" class="border border-border-soft rounded px-4 py-2" value="" placeholder="Phone Number">
+                <label for="select-subject" class="sr-only">Subject</label>
+                <select name="subject" id="select-subject" class="border border-border-soft rounded px-4 py-2">
+                    <option value="website customize">Website customize</option>
+                    <option value="Web Design & Development" selected>Web Design &amp; Development</option>
+                    <option value="Mobile Development">Mobile Development</option>
+                    <option value="SEO">SEO</option>
+                </select>
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="message" id="message" class="border border-border-soft rounded px-4 py-2" rows="2" placeholder="Write Message" required></textarea>
+                <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                @if ($errors->has('g-recaptcha-response'))
+                    <span class="text-red-600">{{ $errors->first('g-recaptcha-response') }}</span>
+                @endif
+                <button type="submit" class="theme-btn justify-center">Send messages <i class="fas fa-angle-double-right"></i></button>
+            </form>
+        </div>
+    </div>
 </section>
 <!-- Contact Area End -->
 
-
-@include('frontend.layouts.footer')
+@include('frontend.layouts.footer-v2')
