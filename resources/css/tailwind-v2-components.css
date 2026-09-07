@@ -18,3 +18,29 @@
     transition: none;
   }
 }
+
+.circle-progress-v2 {
+  --percent: 0;
+  --fill: #3180fc;
+  --empty: #eaf2ff;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(var(--fill) calc(var(--percent) * 1%), var(--empty) 0);
+  transition: background 1.6s ease;
+}
+
+.circle-progress-v2__value {
+  background: #fff;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
