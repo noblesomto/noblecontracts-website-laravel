@@ -99,310 +99,161 @@
 <!-- SaaS Pitch Block end -->
 
 <!-- AI Pitch Block start -->
-<section class="pt-130 pb-100 text-white bgc-black-with-lighting rel z-1">
-    <div class="container">
-        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-            <span class="sub-title mb-10">AI Solutions</span>
-            <h2>AI That Solves Real Problems</h2>
-            <p class="mt-20">AI is most valuable when it improves the way a business operates. We integrate AI into software products, workflows and customer experiences &mdash; from intelligent assistants and automated processes to document analysis, AI search and LLM-powered applications, as built into BotWave, VerifyMe+ and ScanOriginal.</p>
-            <a href="/ai-integration" class="theme-btn style-two mt-15">Explore AI Solutions <i class="fas fa-angle-double-right"></i></a>
+<section class="py-20 bg-ink text-white">
+    <div class="container-nb">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+            <span class="text-accent-cyan uppercase text-sm font-semibold">AI Solutions</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">AI That Solves Real Problems</h2>
+            <p class="mt-5 text-white/70">AI is most valuable when it improves the way a business operates. We integrate AI into software products, workflows and customer experiences &mdash; from intelligent assistants and automated processes to document analysis, AI search and LLM-powered applications, as built into BotWave, VerifyMe+ and ScanOriginal.</p>
+            <a href="/ai-integration" class="theme-btn mt-6" style="background:transparent;border:1px solid #fff;">Explore AI Solutions <i class="fas fa-angle-double-right"></i></a>
         </div>
-        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 justify-content-center">
-            <div class="col">
-                <div class="feature-item-seven mt-30 wow fadeInUp delay-0-2s">
-                    <div class="icon"><i class="flaticon-technical-support"></i></div>
-                    <h5>AI Assistants</h5>
-                    <p>Intelligent conversational experiences for websites, applications and messaging platforms.</p>
-                </div>
+        <div class="flex flex-wrap gap-8 justify-center">
+            @foreach ([
+                ['icon' => 'flaticon-technical-support', 'title' => 'AI Assistants', 'text' => 'Intelligent conversational experiences for websites, applications and messaging platforms.'],
+                ['icon' => 'flaticon-settings', 'title' => 'AI Agents', 'text' => 'Automated systems capable of handling defined business tasks and workflows.'],
+                ['icon' => 'flaticon-search-location', 'title' => 'AI Search', 'text' => 'Smarter search and information retrieval powered by AI.'],
+                ['icon' => 'flaticon-checklist', 'title' => 'Document Intelligence', 'text' => 'Extract, analyse and understand information from business documents.'],
+                ['icon' => 'flaticon-optimization', 'title' => 'AI Automation', 'text' => 'Reduce repetitive work by connecting AI to business processes.'],
+                ['icon' => 'flaticon-web-programming', 'title' => 'LLM Integration', 'text' => 'Integrate modern language models where they create genuine business value.'],
+            ] as $item)
+            <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] border border-white/15 rounded-lg p-8" data-reveal>
+                <div class="text-3xl text-accent-cyan mb-4"><i class="{{ $item['icon'] }}"></i></div>
+                <h5 class="font-bold text-lg">{{ $item['title'] }}</h5>
+                <p class="mt-2 text-white/70">{{ $item['text'] }}</p>
             </div>
-            <div class="col">
-                <div class="feature-item-seven color-two mt-30 wow fadeInUp delay-0-3s">
-                    <div class="icon"><i class="flaticon-settings"></i></div>
-                    <h5>AI Agents</h5>
-                    <p>Automated systems capable of handling defined business tasks and workflows.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-three mt-30 wow fadeInUp delay-0-4s">
-                    <div class="icon"><i class="flaticon-search-location"></i></div>
-                    <h5>AI Search</h5>
-                    <p>Smarter search and information retrieval powered by AI.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-four mt-30 wow fadeInUp delay-0-2s">
-                    <div class="icon"><i class="flaticon-checklist"></i></div>
-                    <h5>Document Intelligence</h5>
-                    <p>Extract, analyse and understand information from business documents.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven mt-30 wow fadeInUp delay-0-3s">
-                    <div class="icon"><i class="flaticon-optimization"></i></div>
-                    <h5>AI Automation</h5>
-                    <p>Reduce repetitive work by connecting AI to business processes.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-two mt-30 wow fadeInUp delay-0-4s">
-                    <div class="icon"><i class="flaticon-web-programming"></i></div>
-                    <h5>LLM Integration</h5>
-                    <p>Integrate modern language models where they create genuine business value.</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
 <!-- AI Pitch Block end -->
 
 <!-- Products We've Built start -->
-<hr class="scan-divider" aria-hidden="true">
-<section class="pt-130 pb-60 rel z-1">
-    <div class="container">
-        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-            <span class="sub-title mb-10">Proof, Not Promises</span>
-            <h2>Products We've Built</h2>
-            <p class="mt-20">We build and operate our own digital products, giving us first-hand experience taking software from concept through development, deployment and continuous improvement.</p>
+<section class="py-20">
+    <div class="container-nb">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+            <span class="text-accent uppercase text-sm font-semibold">Proof, Not Promises</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">Products We've Built</h2>
+            <p class="mt-5 text-ink/70">We build and operate our own digital products, giving us first-hand experience taking software from concept through development, deployment and continuous improvement.</p>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-3 col-sm-6">
-                <a href="/products#botwave" class="product-card d-block text-decoration-none wow fadeInUp delay-0-2s">
-                    <span class="status-pill is-live">Live &mdash; Free Trial</span>
-                    <h5 class="mt-10">BotWave</h5>
-                    <p class="mb-0">AI-powered customer support bots (WhatsApp/Telegram/website).</p>
-                </a>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <a href="/products#verifyme-plus" class="product-card d-block text-decoration-none wow fadeInUp delay-0-3s">
-                    <span class="status-pill is-live">Live / Evolving</span>
-                    <h5 class="mt-10">VerifyMe+</h5>
-                    <p class="mb-0">AI-assisted scam-reporting platform for Nigeria.</p>
-                </a>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <a href="/products#scanoriginal" class="product-card d-block text-decoration-none wow fadeInUp delay-0-4s">
-                    <span class="status-pill is-active">Active MVP Development</span>
-                    <h5 class="mt-10">ScanOriginal</h5>
-                    <p class="mb-0">Anti-counterfeit verification PWA.</p>
-                </a>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <a href="/products#cleanpilot" class="product-card d-block text-decoration-none wow fadeInUp delay-0-5s">
-                    <span class="status-pill is-live">Live</span>
-                    <h5 class="mt-10">CleanPilot</h5>
-                    <p class="mb-0">SaaS operating system for UK cleaning businesses.</p>
-                </a>
-            </div>
+        <div class="flex flex-wrap gap-4 justify-center">
+            @foreach ([
+                ['href' => '/products#botwave', 'pill' => 'Live — Free Trial', 'title' => 'BotWave', 'text' => 'AI-powered customer support bots (WhatsApp/Telegram/website).'],
+                ['href' => '/products#verifyme-plus', 'pill' => 'Live / Evolving', 'title' => 'VerifyMe+', 'text' => 'AI-assisted scam-reporting platform for Nigeria.'],
+                ['href' => '/products#scanoriginal', 'pill' => 'Active MVP Development', 'title' => 'ScanOriginal', 'text' => 'Anti-counterfeit verification PWA.'],
+                ['href' => '/products#cleanpilot', 'pill' => 'Live', 'title' => 'CleanPilot', 'text' => 'SaaS operating system for UK cleaning businesses.'],
+            ] as $item)
+            <a href="{{ $item['href'] }}" class="block w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] border border-border-soft rounded-lg p-6 no-underline text-ink hover:border-accent" data-reveal>
+                <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent">{{ $item['pill'] }}</span>
+                <h5 class="mt-3 font-bold">{{ $item['title'] }}</h5>
+                <p class="mt-1 text-ink/70">{{ $item['text'] }}</p>
+            </a>
+            @endforeach
         </div>
-        <div class="text-center mt-40">
-            <a href="/products" class="theme-btn style-two">See All Products <i class="fas fa-angle-double-right"></i></a>
+        <div class="text-center mt-10">
+            <a href="/products" class="theme-btn" style="background:transparent;color:var(--color-accent);border:1px solid var(--color-accent);">See All Products <i class="fas fa-angle-double-right"></i></a>
         </div>
     </div>
 </section>
 
 <!-- Client Work (secondary) -->
-<section class="project-area-three pt-60 pb-130 rel z-1">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg10">
-                <div class="section-title text-center mb-50 wow fadeInUp delay-0-2s">
-                    <span class="sub-title mb-15">Client Work</span>
-                    <h3>Platforms We've Delivered for Clients</h3>
-                    <p class="mt-20">We've helped businesses turn ideas, services and existing processes into modern digital experiences and software platforms. From property and media platforms to marketplaces and service-booking systems, our work is designed around how each business operates.</p>
+<section class="pt-12 pb-20">
+    <div class="container-nb">
+        <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
+            <span class="text-accent uppercase text-sm font-semibold">Client Work</span>
+            <h3 class="text-2xl md:text-3xl font-bold mt-3">Platforms We've Delivered for Clients</h3>
+            <p class="mt-5 text-ink/70">We've helped businesses turn ideas, services and existing processes into modern digital experiences and software platforms. From property and media platforms to marketplaces and service-booking systems, our work is designed around how each business operates.</p>
+        </div>
+    </div>
+    <div id="portfolio-carousel-v2" class="overflow-hidden">
+        <div class="embla__container flex gap-6 px-4">
+            @foreach ([
+                ['img' => 'oracletv.jpg', 'w' => 900, 'h' => 471, 'alt' => 'Oraclefilms TV', 'href' => '/our-work#oraclefilms-tv', 'title' => 'Oraclefilms TV', 'cat' => 'Media / Entertainment Platform'],
+                ['img' => 'jjhomes.jpg', 'w' => 900, 'h' => 433, 'alt' => 'JJ Homes London', 'href' => '/our-work#jj-homes-london', 'title' => 'JJ Homes London', 'cat' => 'Property / Real Estate Platform'],
+                ['img' => 'marketplace.jpg', 'w' => 900, 'h' => 434, 'alt' => 'Marketplace Naija/Ghana', 'href' => '/our-work#marketplace-group', 'title' => 'Marketplace Naija/Ghana', 'cat' => 'Classifieds Platform'],
+            ] as $item)
+            <div class="min-w-0 flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
+                <div class="relative rounded-lg overflow-hidden group">
+                    <img src="{{ asset('frontend/images/portfolio/' . $item['img']) }}" width="{{ $item['w'] }}" height="{{ $item['h'] }}" loading="lazy" decoding="async" alt="{{ $item['alt'] }}" class="w-full">
+                    <a href="{{ $item['href'] }}" class="absolute inset-0 flex items-center justify-center bg-ink/0 group-hover:bg-ink/40 transition text-white opacity-0 group-hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></a>
                 </div>
+                <h4 class="mt-4"><a href="{{ $item['href'] }}" class="hover:text-accent">{{ $item['title'] }}</a></h4>
+                <span class="text-ink/60 text-sm">{{ $item['cat'] }}</span>
+            </div>
+            @endforeach
+            <div class="min-w-0 flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
+                <div class="relative rounded-lg overflow-hidden bg-ink flex items-center justify-center" style="min-height:250px;">
+                    <i class="fas fa-bolt text-4xl text-accent-cyan"></i>
+                    <a href="/our-work#quickerrands" class="absolute inset-0 flex items-center justify-center bg-ink/0 hover:bg-ink/40 transition text-white opacity-0 hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></a>
+                </div>
+                <h4 class="mt-4"><a href="/our-work#quickerrands" class="hover:text-accent">QuickErrands</a></h4>
+                <span class="text-ink/60 text-sm">On-Demand Services Booking Platform</span>
             </div>
         </div>
     </div>
-    <div class="project-three-active">
-        <div class="project-item style-two wow fadeInUp delay-0-2s">
-            <div class="project-iamge">
-                <img src="{{ asset('frontend/images/portfolio/oracletv.jpg') }}" width="900" height="471" loading="lazy" decoding="async" alt="Oraclefilms TV">
-                <div class="project-over">
-                    <a class="details-btn" href="/our-work#oraclefilms-tv"><i class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="project-content">
-                <h4><a href="/our-work#oraclefilms-tv">Oraclefilms TV</a></h4>
-                <span class="category">Media / Entertainment Platform</span>
-            </div>
-        </div>
-        <div class="project-item style-two wow fadeInUp delay-0-4s">
-            <div class="project-iamge">
-                <img src="{{ asset('frontend/images/portfolio/jjhomes.jpg') }}" width="900" height="433" loading="lazy" decoding="async" alt="JJ Homes London">
-                <div class="project-over">
-                    <a class="details-btn" href="/our-work#jj-homes-london"><i class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="project-content">
-                <h4><a href="/our-work#jj-homes-london">JJ Homes London</a></h4>
-                <span class="category">Property / Real Estate Platform</span>
-            </div>
-        </div>
-        <div class="project-item style-two wow fadeInUp delay-0-6s">
-            <div class="project-iamge">
-                <img src="{{ asset('frontend/images/portfolio/marketplace.jpg') }}" width="900" height="434" loading="lazy" decoding="async" alt="Marketplace Naija/Ghana">
-                <div class="project-over">
-                    <a class="details-btn" href="/our-work#marketplace-group"><i class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="project-content">
-                <h4><a href="/our-work#marketplace-group">Marketplace Naija/Ghana</a></h4>
-                <span class="category">Classifieds Platform</span>
-            </div>
-        </div>
-        <div class="project-item style-two wow fadeInUp delay-0-8s">
-            <div class="project-iamge d-flex align-items-center justify-content-center" style="min-height:250px;background:var(--ink);">
-                <i class="fas fa-bolt fa-3x" style="color:var(--accent-cyan);"></i>
-                <div class="project-over">
-                    <a class="details-btn" href="/our-work#quickerrands"><i class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="project-content">
-                <h4><a href="/our-work#quickerrands">QuickErrands</a></h4>
-                <span class="category">On-Demand Services Booking Platform</span>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="text-center mt-40">
-            <a href="/our-work" class="theme-btn style-two">View All Our Work <i class="fas fa-angle-double-right"></i></a>
-        </div>
+    <div class="container-nb text-center mt-10">
+        <a href="/our-work" class="theme-btn" style="background:transparent;color:var(--color-accent);border:1px solid var(--color-accent);">View All Our Work <i class="fas fa-angle-double-right"></i></a>
     </div>
 </section>
 <!-- Client Work end -->
 
 <!-- Tech Stack start -->
-<section class="pt-130 pb-100 rel z-1">
-    <div class="container">
-        <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-            <span class="sub-title mb-10">What We Build With</span>
-            <h2>Our Technology Stack</h2>
+<section class="py-20">
+    <div class="container-nb">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+            <span class="text-accent uppercase text-sm font-semibold">What We Build With</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">Our Technology Stack</h2>
         </div>
-        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>Backend</h5>
-                    <ul class="list-style-four">
-                        <li>Laravel</li>
-                        <li>Django</li>
-                        <li>FastAPI</li>
-                    </ul>
-                </div>
+        <div class="flex flex-wrap gap-8">
+            @foreach ([
+                ['title' => 'Backend', 'items' => ['Laravel', 'Django', 'FastAPI']],
+                ['title' => 'Frontend', 'items' => ['Alpine.js', 'Livewire', 'React']],
+                ['title' => 'Mobile', 'items' => ['React Native', 'Flutter']],
+                ['title' => 'Databases', 'items' => ['MySQL', 'PostgreSQL', 'Redis']],
+                ['title' => 'Cloud & Infrastructure', 'items' => ['Contabo VPS', 'Hetzner Cloud', 'Nginx']],
+                ['title' => 'AI', 'items' => ['LLM integration', 'AI microservices']],
+            ] as $group)
+            <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)]" data-reveal>
+                <h5 class="font-bold text-lg mb-2">{{ $group['title'] }}</h5>
+                <ul class="space-y-1 text-ink/70">
+                    @foreach ($group['items'] as $item)
+                    <li>{{ $item }}</li>
+                    @endforeach
+                </ul>
             </div>
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>Frontend</h5>
-                    <ul class="list-style-four">
-                        <li>Alpine.js</li>
-                        <li>Livewire</li>
-                        <li>React</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>Mobile</h5>
-                    <ul class="list-style-four">
-                        <li>React Native</li>
-                        <li>Flutter</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>Databases</h5>
-                    <ul class="list-style-four">
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>Redis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>Cloud &amp; Infrastructure</h5>
-                    <ul class="list-style-four">
-                        <li>Contabo VPS</li>
-                        <li>Hetzner Cloud</li>
-                        <li>Nginx</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col">
-                <div class="tech-stack-group">
-                    <h5>AI</h5>
-                    <ul class="list-style-four">
-                        <li>LLM integration</li>
-                        <li>AI microservices</li>
-                    </ul>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
 <!-- Tech Stack end -->
 
 <!-- Process start -->
-<section class="pb-100 rel z-1 bgc-lighter pt-100">
-    <div class="container">
-        <div class="section-title text-center mb-50 wow fadeInUp delay-0-2s">
-            <span class="sub-title mb-15">How We Build</span>
-            <h2>From Idea to Live Product</h2>
+<section class="py-20 bg-surface-alt">
+    <div class="container-nb">
+        <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+            <span class="text-accent uppercase text-sm font-semibold">How We Build</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-3">From Idea to Live Product</h2>
         </div>
-        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-            <div class="col">
-                <div class="feature-item-seven mt-30 wow fadeInUp delay-0-2s">
-                    <div class="icon"><i class="flaticon-idea"></i></div>
-                    <h5>Discover</h5>
-                    <p>Understand the business problem and goals.</p>
-                </div>
+        <div class="flex flex-wrap gap-6 justify-center">
+            @foreach ([
+                ['icon' => 'flaticon-idea', 'title' => 'Discover', 'text' => 'Understand the business problem and goals.'],
+                ['icon' => 'flaticon-checklist', 'title' => 'Plan', 'text' => 'Scope features, architecture and timeline.'],
+                ['icon' => 'flaticon-graphic-design', 'title' => 'Design', 'text' => 'UI/UX that fits how the product will actually be used.'],
+                ['icon' => 'flaticon-coding-2', 'title' => 'Build', 'text' => 'Backend, frontend and APIs, built to scale.'],
+                ['icon' => 'flaticon-web-programming', 'title' => 'Integrate', 'text' => 'Payments, third-party services and AI where useful.'],
+                ['icon' => 'flaticon-startup', 'title' => 'Launch', 'text' => 'Ship to production with proper deployment &amp; monitoring.'],
+                ['icon' => 'flaticon-trophy', 'title' => 'Grow', 'text' => 'Improve, optimise and expand as the business grows.'],
+            ] as $step)
+            <div class="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] border border-border-soft rounded-lg p-6 bg-white" data-reveal>
+                <div class="text-3xl text-accent mb-4"><i class="{{ $step['icon'] }}"></i></div>
+                <h5 class="font-bold">{{ $step['title'] }}</h5>
+                <p class="mt-2 text-ink/70">{!! $step['text'] !!}</p>
             </div>
-            <div class="col">
-                <div class="feature-item-seven color-two mt-30 wow fadeInUp delay-0-3s">
-                    <div class="icon"><i class="flaticon-checklist"></i></div>
-                    <h5>Plan</h5>
-                    <p>Scope features, architecture and timeline.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-three mt-30 wow fadeInUp delay-0-4s">
-                    <div class="icon"><i class="flaticon-graphic-design"></i></div>
-                    <h5>Design</h5>
-                    <p>UI/UX that fits how the product will actually be used.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-four mt-30 wow fadeInUp delay-0-2s">
-                    <div class="icon"><i class="flaticon-coding-2"></i></div>
-                    <h5>Build</h5>
-                    <p>Backend, frontend and APIs, built to scale.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven mt-30 wow fadeInUp delay-0-3s">
-                    <div class="icon"><i class="flaticon-web-programming"></i></div>
-                    <h5>Integrate</h5>
-                    <p>Payments, third-party services and AI where useful.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-two mt-30 wow fadeInUp delay-0-4s">
-                    <div class="icon"><i class="flaticon-startup"></i></div>
-                    <h5>Launch</h5>
-                    <p>Ship to production with proper deployment &amp; monitoring.</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="feature-item-seven color-three mt-30 wow fadeInUp delay-0-2s">
-                    <div class="icon"><i class="flaticon-trophy"></i></div>
-                    <h5>Grow</h5>
-                    <p>Improve, optimise and expand as the business grows.</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
 <!-- Process end -->
+
 
 <!-- Testimonial Area Start -->
 <section class="testimonial-area-two rel z-1 mt-130 mb-120">
