@@ -1,3 +1,20 @@
-/* Bespoke effects for the -v2 pages that don't fit as pure Tailwind utilities.
-   Populated by later migration tasks (hero slider fade transition, decorative
-   shape positioning, etc). Empty until Task 9 (v2 layout partials). */
+/* Bespoke effects for the -v2 pages that don't fit as pure Tailwind utilities. */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
