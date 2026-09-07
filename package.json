@@ -3,11 +3,14 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "build:tailwind-v2": "tailwindcss -i ./resources/css/tailwind-v2-source.css -o ./public/frontend/css/tailwind-v2.css --minify"
     },
     "devDependencies": {
+        "@tailwindcss/cli": "^4.3.3",
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.7.5",
+        "tailwindcss": "^4.3.3",
         "vite": "^4.0.0"
     }
 }
