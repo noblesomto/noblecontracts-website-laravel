@@ -1,5 +1,19 @@
 /* Bespoke effects for the -v2 pages that don't fit as pure Tailwind utilities. */
 
+.quote-step {
+  display: none;
+}
+.quote-step.is-active {
+  display: block;
+}
+.quote-field-error {
+  border-color: #dc2626 !important;
+}
+.quote-honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
 [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
