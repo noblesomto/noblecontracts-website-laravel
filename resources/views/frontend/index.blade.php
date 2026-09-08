@@ -3,7 +3,7 @@
 @include('frontend.layouts.slider-v2')
 
 <!-- Trust & Credibility Bar start -->
-<section class="py-16 bg-surface-alt">
+<section class="py-16 bg-surface-alt bg-cover bg-center" style="background-image: url({{ asset('frontend/images/background/counter-bg.png') }});">
     <div class="container-nb">
         <div class="flex flex-wrap justify-center gap-8 text-center">
             <div class="w-full sm:w-1/2 md:w-1/4" data-reveal>
