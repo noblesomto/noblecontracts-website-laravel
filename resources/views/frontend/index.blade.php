@@ -61,22 +61,29 @@
 <section class="py-20">
     <div class="container-nb">
         <div class="flex flex-wrap items-center justify-between gap-12">
-            <div class="w-full lg:w-5/12" data-reveal>
-                <img src="{{ asset('frontend/images/about/about-us.jpg') }}" width="450" height="666" loading="lazy" decoding="async" class="rounded-lg w-full" alt="Have a SaaS idea? We can build it">
+            <div class="w-full lg:w-5/12 relative pl-8 lg:pl-14" data-reveal>
+                <img src="{{ asset('frontend/images/shapes/image-left.png') }}" class="hidden lg:block absolute left-0 top-[5%] w-[15%]" alt="" aria-hidden="true">
+                <div class="relative">
+                    <div class="absolute -inset-3 lg:-inset-4 bg-accent rounded-lg -rotate-[11deg] -z-10" aria-hidden="true"></div>
+                    <img src="{{ asset('frontend/images/about/about-us.jpg') }}" width="450" height="666" loading="lazy" decoding="async" class="relative rounded-lg w-full" alt="Have a SaaS idea? We can build it">
+                </div>
             </div>
             <div class="w-full lg:w-1/2" data-reveal>
-                <span class="text-accent uppercase text-sm font-semibold">SaaS Development</span>
+                <div class="flex items-center gap-4 text-accent font-bold">
+                    <i class="fas fa-ellipsis-h text-2xl"></i>
+                    <span class="underline underline-offset-4">SaaS Development</span>
+                </div>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3">Have a SaaS Idea? Let's Build It.</h2>
                 <p class="mt-5 text-ink/70">From an early concept to a production-ready SaaS platform, we handle the technology required to turn your idea into a real product. We can help with product architecture, user experience, development, payments, integrations, AI capabilities, deployment and ongoing improvement.</p>
                 <div class="flex flex-wrap gap-x-12 gap-y-2 mt-6">
-                    <ul class="space-y-1 text-ink/70">
+                    <ul class="list-style-four text-ink/70">
                         <li>Product planning</li>
                         <li>UI/UX</li>
                         <li>Architecture</li>
                         <li>Backend/frontend development</li>
                         <li>Authentication</li>
                     </ul>
-                    <ul class="space-y-1 text-ink/70">
+                    <ul class="list-style-four text-ink/70">
                         <li>Subscription billing</li>
                         <li>Admin dashboards</li>
                         <li>APIs</li>
@@ -85,14 +92,14 @@
                     </ul>
                 </div>
                 <p class="font-bold mt-6 mb-2">Recent SaaS Products</p>
-                <ul class="space-y-1 text-ink/70 mb-6">
+                <ul class="list-style-four text-ink/70 mb-6">
                     <li><a href="/products#botwave" class="text-signal-text hover:underline">BotWave</a> &mdash; AI-powered customer support</li>
                     <li><a href="/products#cleanpilot" class="text-signal-text hover:underline">CleanPilot</a> &mdash; Business operating platform for cleaning companies</li>
                     <li><a href="/our-work#marketplace-group" class="text-signal-text hover:underline">Marketplace Group</a> &mdash; Multi-country marketplace infrastructure</li>
                 </ul>
                 <div class="flex flex-wrap gap-4">
                     <a href="/start-a-project" class="theme-btn">Start a Project <i class="fas fa-angle-double-right"></i></a>
-                    <a href="/saas-development" class="theme-btn" style="background:transparent;color:var(--color-accent);border:1px solid var(--color-accent);">Explore Our SaaS Work <i class="fas fa-angle-double-right"></i></a>
+                    <a href="/saas-development" class="theme-btn" style="background:var(--color-accent-cyan);">Explore Our SaaS Work <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
         </div>
