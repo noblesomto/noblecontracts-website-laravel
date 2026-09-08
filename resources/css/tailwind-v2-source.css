@@ -10,7 +10,7 @@
 @source "../views/frontend/layouts/footer-v2.blade.php";
 
 @theme {
-  --color-ink: #0a0e17;
+  --color-ink: #12141a;
   --color-ink-soft: #101a30;
   --color-surface-alt: #f4f6fb;
   --color-accent: #fc653c;
