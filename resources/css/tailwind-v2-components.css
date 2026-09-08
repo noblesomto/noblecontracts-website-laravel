@@ -76,6 +76,18 @@
   opacity: 0.88;
 }
 
+.theme-btn--outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.theme-btn--outline:hover {
+  opacity: 1;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
 #nav-v2-menu.is-open {
   display: block;
 }

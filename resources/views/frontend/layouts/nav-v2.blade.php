@@ -10,7 +10,7 @@
         <nav class="hidden lg:flex items-center gap-10 text-lg font-medium">
             <a href="/" class="text-white hover:text-accent">Home</a>
             <div class="relative group">
-                <a href="/services" class="text-white/80 hover:text-accent">Services</a>
+                <a href="/services" class="text-white/80 hover:text-accent">Services <i class="fas fa-angle-down text-xs ml-[5px]"></i></a>
                 <ul class="absolute left-0 top-full mt-2 min-w-[260px] bg-[#181b23] border border-white/10 rounded shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible focus-within:opacity-100 focus-within:visible transition text-base">
                     <li><a href="/custom-software" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Custom Software</a></li>
                     <li><a href="/saas-development" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">SaaS Development</a></li>
@@ -28,7 +28,7 @@
             <a href="/contact-us" class="text-white/80 hover:text-accent">Contact</a>
         </nav>
 
-        <a href="/start-a-project" class="hidden lg:inline-flex theme-btn text-base px-8 py-4">Start a Project <i class="fas fa-angle-double-right"></i></a>
+        <a href="/start-a-project" class="hidden lg:inline-flex theme-btn theme-btn--outline text-base px-8 py-4">Start a Project <i class="fas fa-angle-double-right"></i></a>
 
         <button id="nav-v2-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-v2-menu" class="lg:hidden p-2">
             <span class="block w-7 h-0.5 bg-white mb-2"></span>
