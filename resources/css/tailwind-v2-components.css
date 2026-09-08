@@ -252,3 +252,10 @@
   margin: 0;
   font-weight: 600;
 }
+
+.what-we-do-card {
+  transition: transform 0.4s ease;
+}
+.what-we-do-card:hover {
+  transform: translateY(-6px);
+}

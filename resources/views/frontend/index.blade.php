@@ -34,16 +34,21 @@
         </div>
         <div class="flex flex-wrap gap-8 justify-center">
             @foreach ([
-                ['icon' => 'flaticon-coding-2', 'title' => 'Custom Software', 'href' => '/custom-software', 'text' => 'Purpose-built applications around business processes and workflows.'],
-                ['icon' => 'flaticon-online', 'title' => 'SaaS Platforms', 'href' => '/saas-development', 'text' => 'Scalable subscription products designed to launch, grow and evolve.'],
-                ['icon' => 'flaticon-idea', 'title' => 'AI Integration', 'href' => '/ai-integration', 'text' => 'Practical AI that improves products, automates workflows and enhances customer experiences.'],
-                ['icon' => 'flaticon-app-development', 'title' => 'Web & Mobile Applications', 'href' => '/web-development', 'text' => 'Modern applications designed for performance and usability.'],
-                ['icon' => 'flaticon-web-programming', 'title' => 'API & System Integration', 'href' => '/api-integration', 'text' => 'Connect payments, communication platforms, CRMs, accounting systems and other services.'],
-                ['icon' => 'flaticon-technical-support', 'title' => 'Cloud & Deployment', 'href' => '/cloud-deployment', 'text' => 'Reliable production infrastructure and deployment.'],
+                ['icon' => 'flaticon-coding-2', 'title' => 'Custom Software', 'href' => '/custom-software', 'text' => 'Purpose-built applications around business processes and workflows.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-online', 'title' => 'SaaS Platforms', 'href' => '/saas-development', 'text' => 'Scalable subscription products designed to launch, grow and evolve.', 'color' => '#06b6d4'],
+                ['icon' => 'flaticon-idea', 'title' => 'AI Integration', 'href' => '/ai-integration', 'text' => 'Practical AI that improves products, automates workflows and enhances customer experiences.', 'color' => '#f59e0b'],
+                ['icon' => 'flaticon-app-development', 'title' => 'Web & Mobile Applications', 'href' => '/web-development', 'text' => 'Modern applications designed for performance and usability.', 'color' => '#8b5cf6'],
+                ['icon' => 'flaticon-web-programming', 'title' => 'API & System Integration', 'href' => '/api-integration', 'text' => 'Connect payments, communication platforms, CRMs, accounting systems and other services.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-technical-support', 'title' => 'Cloud & Deployment', 'href' => '/cloud-deployment', 'text' => 'Reliable production infrastructure and deployment.', 'color' => '#06b6d4'],
             ] as $item)
-            <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] border border-border-soft rounded-lg p-8" data-reveal>
-                <div class="text-3xl text-accent mb-4"><i class="{{ $item['icon'] }}"></i></div>
-                <h5 class="font-bold text-lg"><a href="{{ $item['href'] }}" class="hover:text-accent">{{ $item['title'] }}</a></h5>
+            <div class="what-we-do-card w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] rounded-2xl p-8" style="background: color-mix(in srgb, {{ $item['color'] }} 8%, white);" data-reveal>
+                <div class="relative inline-flex mb-5">
+                    <div class="absolute -inset-3 rounded-full blur-xl opacity-50" style="background: {{ $item['color'] }};" aria-hidden="true"></div>
+                    <div class="relative w-16 h-16 rounded-2xl flex items-center justify-center" style="background: {{ $item['color'] }};">
+                        <i class="{{ $item['icon'] }} text-3xl text-white"></i>
+                    </div>
+                </div>
+                <h5 class="font-bold text-lg"><a href="{{ $item['href'] }}" class="hover:opacity-70">{{ $item['title'] }}</a></h5>
                 <p class="mt-2 text-ink/70">{{ $item['text'] }}</p>
             </div>
             @endforeach
