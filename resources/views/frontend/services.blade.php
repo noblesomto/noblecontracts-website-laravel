@@ -86,9 +86,9 @@
     <div class="container-nb">
         <div class="flex flex-wrap gap-6 justify-center">
             @foreach ([
-                ['icon' => 'flaticon-idea', 'title' => 'Make Strategy', 'text' => 'Define objective brand Plans, keyword research & positioning strategy.', 'color' => '#3180fc'],
+                ['icon' => 'flaticon-idea', 'title' => 'Make Strategy', 'text' => 'Define clear objectives, research your market and shape a strategy for the build ahead.', 'color' => '#3180fc'],
                 ['icon' => 'flaticon-graphic-design', 'title' => 'Website Design', 'text' => 'We settle on some initial design drafts for website & choose one concept.', 'color' => '#16b4f2'],
-                ['icon' => 'flaticon-coding-2', 'title' => 'Development', 'text' => 'To make the content, information architecture, visual design all work', 'color' => '#f1b000'],
+                ['icon' => 'flaticon-coding-2', 'title' => 'Development', 'text' => 'We bring the content, information architecture and visual design together into a working product.', 'color' => '#f1b000'],
                 ['icon' => 'flaticon-checklist', 'title' => 'Project Testing', 'text' => 'Our team of experts are always available for any updates you may need.', 'color' => '#8400ff'],
                 ['icon' => 'flaticon-goal', 'title' => 'Project Launch', 'text' => 'We launch, monitor and stay on hand for the improvements that follow.', 'color' => '#ff7506'],
             ] as $item)
@@ -118,11 +118,11 @@
             <div class="w-full lg:w-[calc(50%-3rem)]" data-reveal>
                 <span class="text-accent uppercase text-sm font-semibold">What We Offer</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Web Design & Development</h2>
-                <p class="text-ink/70">The easy-to-use, search engine friendly, flexible development platform is currently used on over 35% of all websites. WordPress provides a user friendly content mana gement system (CMS), that allows you to easily make changes on the fly</p>
+                <p class="text-ink/70">We design and build fast, secure websites and web platforms tailored to how your business actually works &mdash; from marketing sites to full web applications &mdash; rather than squeezing you into a one-size-fits-all template.</p>
                 <ul class="list-style-four text-ink/70 mt-4 mb-6">
-                    <li>Easy to edit & Search engine friendly</li>
-                    <li>Highly customizable</li>
-                    <li>Most popular CMS in the world</li>
+                    <li>Built around your workflow, not a template</li>
+                    <li>SEO-friendly from the ground up</li>
+                    <li>Easy for your team to manage and update</li>
                 </ul>
                 <a href="/web-development" class="theme-btn">Learn More <i class="fas fa-angle-double-right"></i></a>
             </div>
@@ -162,9 +162,9 @@
                 <img src="{{ asset('frontend/images/about/cta.png') }}" alt="CTA" class="rounded-lg w-full">
             </div>
             <div class="w-full lg:w-[calc(50%-2rem)]" data-reveal>
-                <h2 class="text-2xl md:text-3xl font-bold mb-5">Very Much 91.50% Increase in Organic Traffic</h2>
-                <p class="text-white/80">Boya Apartment shortlet services started with wanting a new website. After working with our team, they've now expanded their strategy with us into several facets of digital marketing and have seen optimal growth.</p>
-                <a href="/contact-us" class="theme-btn mt-6" style="background:#fff;color:var(--color-accent);">Create Your Website <i class="fas fa-angle-double-right"></i></a>
+                <h2 class="text-2xl md:text-3xl font-bold mb-5">Ready to Bring Your Project to Life?</h2>
+                <p class="text-white/80">With over 11 years building custom software, SaaS platforms and AI-powered solutions, we help you move from idea to a real, working product &mdash; with a scope and timeline you can trust.</p>
+                <a href="/start-a-project" class="theme-btn mt-6" style="background:#fff;color:var(--color-accent);">Start a Project <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
     </div>
@@ -176,9 +176,9 @@
     <div class="container-nb">
         <div class="flex flex-wrap justify-between items-center gap-12">
             <div class="w-full lg:w-1/2" data-reveal>
-                <span class="text-accent uppercase text-sm font-semibold">Support &amp; Marketing</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Marketing to Support Your Web Design</h2>
-                <p class="text-ink/70 mb-8">Fortunately, we aren't just designers and developers here&mdash;we are writers, strategists, techs and creatives, all working towards the same end goal: our client's success. As a full-service digital marketing agency</p>
+                <span class="text-accent uppercase text-sm font-semibold">Digital Growth</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Marketing to Support Your Software</h2>
+                <p class="text-ink/70 mb-8">Alongside software and product development, our Digital Growth service helps you get in front of the right audience &mdash; SEO, social media and email/SMS marketing built to support the products we build for you.</p>
                 <div class="flex flex-wrap gap-8">
                     <div class="text-center">
                         <div class="circle-progress-v2" data-percent="89" data-color="#3180fc" data-empty-color="#eaf2ff">
@@ -225,10 +225,10 @@
 <section class="bg-ink text-white py-16">
     <div class="container-nb flex flex-wrap items-center justify-between gap-8" data-reveal>
         <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-bold">Let's Design Your New Website</h2>
-            <p class="mt-3 text-white/70">Do you want to have a website that stands out and impresses your clients? Then we are ready to help! Click the button below to contact us and discuss your ideas.</p>
+            <h2 class="text-2xl md:text-3xl font-bold">Have a Project in Mind?</h2>
+            <p class="mt-3 text-white/70">Whether it's a new website, a custom platform or a full product build, we're ready to help. Tell us about your project and get a tailored response within 24 hours.</p>
         </div>
-        <a href="/contact-us" class="theme-btn" style="background:transparent;border:1px solid #fff;">Let's Get Started <i class="fas fa-angle-double-right"></i></a>
+        <a href="/start-a-project" class="theme-btn" style="background:transparent;border:1px solid #fff;">Start a Project <i class="fas fa-angle-double-right"></i></a>
     </div>
 </section>
 <!-- Call to Action Area End -->
