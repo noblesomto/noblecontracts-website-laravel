@@ -1,0 +1,381 @@
+I reviewed the current About Us page. The main issue is that it still reflects the old “web design/digital marketing agency” identity, while the direction we've established for Noble IT Services is now software development, SaaS, AI and digital product engineering.
+
+There are also several obvious quality issues—placeholder statistics, outdated copy, grammatical errors, and duplicated/legacy content—that make the page feel less established than the actual work you're presenting.
+
+1. The positioning needs to change completely
+
+The current opening says:
+
+“We are Professional Digital Team”
+
+and describes Noble IT Services primarily as a company providing websites and digital marketing.
+
+That conflicts with the new homepage positioning:
+
+Software · SaaS · AI
+
+The About page should instead answer:
+
+Who is Noble IT Services?
+What kind of company are you?
+What do you build?
+Who do you build for?
+What makes you different?
+Why should a business trust you?
+How do you approach software development?
+Recommended positioning
+
+We Build Software That Moves Businesses Forward.
+
+Noble IT Services is a software development and technology company focused on building custom software, SaaS platforms and AI-powered solutions for businesses, startups and organisations.
+
+2. Replace the current opening section
+
+The current paragraph contains phrases such as “subcidiary,” “registered in Nigerian,” “web designers,” and “outstanding image,” which sound dated and contain grammatical problems.
+
+I'd replace the entire opening with:
+
+About Noble IT Services
+We Build Software That Moves Businesses Forward.
+
+Noble IT Services is a software development and technology company focused on building custom software, SaaS platforms and AI-powered solutions.
+
+We work with businesses, entrepreneurs and organisations to transform ideas, business processes and complex requirements into reliable digital products.
+
+From the first product concept to design, development, integration, deployment and ongoing improvement, we provide the engineering expertise required to turn technology into a practical business advantage.
+
+Our experience spans web applications, SaaS platforms, business automation, AI integration, marketplaces, payment systems and other technology-driven solutions.
+
+We don't just build software. We build products designed to solve real problems.
+
+3. Add a proper “What We Do” section
+
+The current Customize Website / Premium Design cards are too generic and should be removed.
+
+Replace them with your actual capabilities:
+
+What We Build
+
+Custom Software
+Purpose-built applications designed around your business processes and requirements.
+
+SaaS Platforms
+Scalable software products designed for subscription-based businesses and recurring revenue models.
+
+AI-Powered Applications
+Intelligent products using AI to automate processes, analyse information and improve customer experiences.
+
+Web & Mobile Applications
+Modern, responsive applications designed for real users across web and mobile devices.
+
+Business Automation
+Digital workflows that reduce repetitive work and improve operational efficiency.
+
+API & System Integration
+Connecting your application with payments, communication platforms, CRMs, accounting systems and other third-party services.
+
+4. Tell the company's story
+
+The current About page doesn't really tell the visitor how Noble IT Services evolved. It jumps straight into generic service descriptions.
+
+I'd add a short company story.
+
+From Web Development to Software Engineering
+
+Noble IT Services has evolved alongside the technology landscape.
+
+What began with web design and digital development has grown into a broader software engineering practice focused on building complete digital products and business platforms.
+
+Today, our work extends beyond websites. We design and develop SaaS products, business applications, marketplaces, AI-powered systems, APIs and integrated digital solutions.
+
+This evolution has been driven by one simple principle:
+
+Technology should solve a business problem, not simply exist as a feature.
+
+That principle guides how we approach every project — from the first conversation to production and beyond.
+
+This is particularly valuable because the existing site still has a lot of legacy digital-agency content, including web design, SEO, SMS marketing and email marketing.
+
+5. Fix the statistics
+
+This is important.
+
+The current About page shows:
+
+11+ Years Of Experience
+0 Projects complete
+0 Trusted Global Clients
+0 Expert Team Member
+0 Projects complete
+
+The zeros immediately make the company look unfinished.
+
+Don't use statistics unless they're real.
+
+If you can verify your numbers, use something like:
+
+11+
+Years of Experience
+
+XX+
+Projects Delivered
+
+XX+
+Businesses Served
+
+XX
+Markets Reached
+
+Otherwise, use non-numeric credibility statements:
+
+11+ Years
+Software Development Experience
+
+Products Built
+From Concept to Production
+
+Multiple Markets
+Nigeria · UK · International
+
+End-to-End
+Product Development
+
+6. Add “What Makes Us Different”
+
+This is missing and would make the page considerably stronger.
+
+Why Businesses Choose Noble IT Services
+We Think Beyond the Build
+
+We don't approach software as a collection of features. We first understand the business problem and then determine the technology required to solve it.
+
+We Build Real Products
+
+Our experience includes building and operating our own software products. This gives us practical insight into product development, deployment, users, integrations and continuous improvement.
+
+We Design for Growth
+
+We build with the future in mind — creating systems that can evolve as your users, data, integrations and business requirements grow.
+
+We Make AI Practical
+
+We don't add AI simply because it is trending. We identify where AI can genuinely improve a product, automate work or create better experiences.
+
+We Work Across the Full Lifecycle
+
+From discovery and product planning to design, development, deployment and ongoing improvement, we can support the entire journey.
+
+7. Add your product experience
+
+This is one of the biggest opportunities on the About page.
+
+Your portfolio now includes products such as BotWave, VerifyMe+, ScanOriginal, CleanPilot and Marketplace Group.
+
+The About page should use those products as evidence that you understand product development.
+
+Suggested section:
+We Build Products, Not Just Projects
+
+Our experience goes beyond delivering individual client projects. We've designed, developed and operated software products across areas including AI, SaaS, marketplaces, business automation and trust & safety.
+
+Then show 3–4 products visually.
+
+BotWave
+AI Customer Support
+
+VerifyMe+
+Trust & Safety
+
+CleanPilot
+Business SaaS
+
+Marketplace Group
+Multi-Country Marketplace
+
+[Explore Our Products →]
+
+This connects the About page directly to your Our Work page.
+
+8. Add a development philosophy
+
+This would give the company a much more mature engineering identity.
+
+How We Think About Technology
+
+Business First
+Technology decisions should support clear business objectives.
+
+User Focused
+Software should be intuitive, accessible and built around the people using it.
+
+Built to Scale
+Architecture should allow the product to grow without unnecessary complexity.
+
+Security & Reliability
+Production software must be dependable and responsibly engineered.
+
+Continuous Improvement
+A product is never truly finished. It should evolve with its users and business.
+
+9. Replace the current “Digital Marketing” section
+
+The current page has:
+
+“We Offer a Full Range of Digital Marketing Services!”
+
+That is no longer appropriate for the new company positioning.
+
+It makes Noble IT Services look like an old-school digital marketing agency.
+
+Replace it with:
+
+Engineering Digital Products for the Real World
+
+Modern businesses need more than a website.
+
+They need systems that connect customers, teams, data and business processes.
+
+That's where we come in.
+
+We combine product thinking, software engineering and emerging technologies to build digital solutions that are practical, scalable and designed for real-world use.
+
+Whether you're launching a new product, modernising an existing platform or introducing AI into your operations, we help turn the idea into working technology.
+
+10. Keep the values—but rewrite them
+
+The current values are:
+
+Top Quality
+Timely Delivery
+Professionalism
+Dedication
+
+These are fine, but extremely generic.
+
+I'd make them more distinctive:
+
+Our Principles
+
+Quality Engineering
+We care about the quality of the software we put into production.
+
+Clear Communication
+Good products come from clear expectations, feedback and collaboration.
+
+Practical Innovation
+We use new technology when it creates genuine value.
+
+Ownership
+We take responsibility for the solutions we build and the outcomes they are intended to achieve.
+
+Long-Term Thinking
+We build systems that can evolve with the businesses behind them.
+
+11. Add a proper process section
+
+The About page should briefly explain how Noble works.
+
+How We Work
+
+01 — Understand
+We learn about your business, users and objectives.
+
+02 — Define
+We turn requirements into a clear product and technical direction.
+
+03 — Design
+We create the user experience and product structure.
+
+04 — Develop
+We build the software using appropriate technologies and architecture.
+
+05 — Launch
+We test, deploy and integrate the product into your operations.
+
+06 — Improve
+We continue to optimise and expand the product as requirements evolve.
+
+12. Replace the current CTA
+
+The current CTA is:
+
+“Let’s Design Your New Website”
+
+That is now too narrow for Noble IT Services.
+
+Use:
+
+Have an Idea Worth Building?
+
+Whether you're launching a SaaS product, developing custom business software, modernising an existing platform or exploring how AI can transform your business, we're ready to help.
+
+Let's turn your idea into working software.
+
+Start a Project →
+
+Recommended Final About Page Structure
+
+I would build the page in this order:
+
+ABOUT NOBLE IT SERVICES
+
+01  HERO
+    We Build Software That Moves Businesses Forward.
+
+02  COMPANY INTRODUCTION
+    Who Noble IT Services is
+    What we build
+    Who we serve
+
+03  CREDIBILITY
+    11+ Years
+    Products Built
+    Projects / Markets / Clients
+    (verified figures only)
+
+04  OUR CAPABILITIES
+    Custom Software
+    SaaS
+    AI
+    Web & Mobile
+    Automation
+    Integrations
+
+05  OUR STORY
+    From Web Development to Software Engineering
+
+06  PRODUCTS WE'VE BUILT
+    BotWave
+    VerifyMe+
+    ScanOriginal
+    CleanPilot
+    Marketplace Group
+
+07  WHY NOBLE IT SERVICES
+    Business First
+    Product Experience
+    Scalable Engineering
+    Practical AI
+    End-to-End Development
+
+08  HOW WE THINK
+    Business First
+    User Focused
+    Built to Scale
+    Security & Reliability
+    Continuous Improvement
+
+09  HOW WE WORK
+    Understand → Define → Design → Develop → Launch → Improve
+
+10  OUR PRINCIPLES
+    Quality
+    Communication
+    Innovation
+    Ownership
+    Long-Term Thinking
+
+11  FINAL CTA
+    Have an Idea Worth Building?
+
+12  FOOTER
