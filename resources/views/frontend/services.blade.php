@@ -25,18 +25,23 @@
         </div>
         <div class="flex flex-wrap gap-6">
             @foreach ([
-                ['id' => 'custom-software', 'icon' => 'flaticon-coding-2', 'title' => 'Custom Software', 'href' => '/custom-software', 'text' => 'Bespoke software built around how your business actually works.', 'links' => [['href' => '/custom-software', 'label' => 'Learn More']]],
-                ['id' => 'saas-development', 'icon' => 'flaticon-online', 'title' => 'SaaS Development', 'href' => '/saas-development', 'text' => 'Multi-tenant SaaS platforms, from idea to production.', 'links' => [['href' => '/saas-development', 'label' => 'Learn More']]],
-                ['id' => 'ai-integration', 'icon' => 'flaticon-idea', 'title' => 'AI Integration', 'href' => '/ai-integration', 'text' => 'AI chatbots, agents, search and automation built into real products.', 'links' => [['href' => '/ai-integration', 'label' => 'Learn More']]],
-                ['id' => 'web-mobile-applications', 'icon' => 'flaticon-app-development', 'title' => 'Web & Mobile Applications', 'href' => null, 'text' => 'Responsive web platforms and native/cross-platform mobile apps.', 'links' => [['href' => '/web-development', 'label' => 'Web Development'], ['href' => '/mobile-apps', 'label' => 'Mobile Apps']]],
-                ['id' => 'api-integration', 'icon' => 'flaticon-web-programming', 'title' => 'API & System Integration', 'href' => '/api-integration', 'text' => 'Connecting your product to payments, KYC, messaging and third-party systems.', 'links' => [['href' => '/api-integration', 'label' => 'Learn More']]],
-                ['id' => 'ui-ux-design', 'icon' => 'flaticon-user-experience', 'title' => 'UI/UX & Product Design', 'href' => '/ui-ux-design', 'text' => 'Interfaces designed for how a product will actually be used.', 'links' => [['href' => '/ui-ux-design', 'label' => 'Learn More']]],
-                ['id' => 'cloud-deployment', 'icon' => 'flaticon-technical-support', 'title' => 'Cloud & Deployment', 'href' => '/cloud-deployment', 'text' => 'Reliable hosting, deployment and infrastructure for production software.', 'links' => [['href' => '/cloud-deployment', 'label' => 'Learn More']]],
-                ['id' => 'digital-growth', 'icon' => 'flaticon-seo', 'title' => 'Digital Growth', 'href' => null, 'text' => 'SEO, social and email/SMS marketing for businesses that need it.', 'links' => [['href' => '/seo', 'label' => 'SEO'], ['href' => '/social-media', 'label' => 'Social Media'], ['href' => '/email-marketing', 'label' => 'Email Marketing'], ['href' => '/sms-marketing', 'label' => 'SMS Marketing'], ['href' => '/digital-marketing', 'label' => 'Digital Marketing']]],
+                ['id' => 'custom-software', 'icon' => 'flaticon-coding-2', 'title' => 'Custom Software', 'href' => '/custom-software', 'text' => 'Bespoke software built around how your business actually works.', 'color' => '#3b82f6', 'links' => [['href' => '/custom-software', 'label' => 'Learn More']]],
+                ['id' => 'saas-development', 'icon' => 'flaticon-online', 'title' => 'SaaS Development', 'href' => '/saas-development', 'text' => 'Multi-tenant SaaS platforms, from idea to production.', 'color' => '#06b6d4', 'links' => [['href' => '/saas-development', 'label' => 'Learn More']]],
+                ['id' => 'ai-integration', 'icon' => 'flaticon-idea', 'title' => 'AI Integration', 'href' => '/ai-integration', 'text' => 'AI chatbots, agents, search and automation built into real products.', 'color' => '#f59e0b', 'links' => [['href' => '/ai-integration', 'label' => 'Learn More']]],
+                ['id' => 'web-mobile-applications', 'icon' => 'flaticon-app-development', 'title' => 'Web & Mobile Applications', 'href' => null, 'text' => 'Responsive web platforms and native/cross-platform mobile apps.', 'color' => '#8b5cf6', 'links' => [['href' => '/web-development', 'label' => 'Web Development'], ['href' => '/mobile-apps', 'label' => 'Mobile Apps']]],
+                ['id' => 'api-integration', 'icon' => 'flaticon-web-programming', 'title' => 'API & System Integration', 'href' => '/api-integration', 'text' => 'Connecting your product to payments, KYC, messaging and third-party systems.', 'color' => '#3b82f6', 'links' => [['href' => '/api-integration', 'label' => 'Learn More']]],
+                ['id' => 'ui-ux-design', 'icon' => 'flaticon-user-experience', 'title' => 'UI/UX & Product Design', 'href' => '/ui-ux-design', 'text' => 'Interfaces designed for how a product will actually be used.', 'color' => '#ec4899', 'links' => [['href' => '/ui-ux-design', 'label' => 'Learn More']]],
+                ['id' => 'cloud-deployment', 'icon' => 'flaticon-technical-support', 'title' => 'Cloud & Deployment', 'href' => '/cloud-deployment', 'text' => 'Reliable hosting, deployment and infrastructure for production software.', 'color' => '#06b6d4', 'links' => [['href' => '/cloud-deployment', 'label' => 'Learn More']]],
+                ['id' => 'digital-growth', 'icon' => 'flaticon-seo', 'title' => 'Digital Growth', 'href' => null, 'text' => 'SEO, social and email/SMS marketing for businesses that need it.', 'color' => '#22c55e', 'links' => [['href' => '/seo', 'label' => 'SEO'], ['href' => '/social-media', 'label' => 'Social Media'], ['href' => '/email-marketing', 'label' => 'Email Marketing'], ['href' => '/sms-marketing', 'label' => 'SMS Marketing'], ['href' => '/digital-marketing', 'label' => 'Digital Marketing']]],
             ] as $svc)
-            <div id="{{ $svc['id'] }}" class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] border border-border-soft rounded-lg p-6" data-reveal>
-                <div class="text-3xl text-accent mb-4"><i class="{{ $svc['icon'] }}"></i></div>
-                <h5 class="font-bold">@if($svc['href'])<a href="{{ $svc['href'] }}" class="hover:text-accent">{{ $svc['title'] }}</a>@else{{ $svc['title'] }}@endif</h5>
+            <div id="{{ $svc['id'] }}" class="what-we-do-card w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(25%-1.125rem)] rounded-2xl p-6" style="background: color-mix(in srgb, {{ $svc['color'] }} 8%, white);" data-reveal>
+                <div class="relative inline-flex mb-4">
+                    <div class="absolute -inset-3 rounded-full blur-xl opacity-50" style="background: {{ $svc['color'] }};" aria-hidden="true"></div>
+                    <div class="relative w-14 h-14 rounded-2xl flex items-center justify-center" style="background: {{ $svc['color'] }};">
+                        <i class="{{ $svc['icon'] }} text-2xl text-white"></i>
+                    </div>
+                </div>
+                <h5 class="font-bold">@if($svc['href'])<a href="{{ $svc['href'] }}" class="hover:opacity-70">{{ $svc['title'] }}</a>@else{{ $svc['title'] }}@endif</h5>
                 <p class="mt-2 text-ink/70">{{ $svc['text'] }}</p>
                 @foreach ($svc['links'] as $link)
                 <a href="{{ $link['href'] }}" class="block mt-2 text-signal-text hover:underline text-sm">{{ $link['label'] }} <i class="fal fa-long-arrow-right"></i></a>
@@ -60,7 +65,7 @@
             </div>
             <div class="w-full lg:w-5/12" data-reveal>
                 <p class="text-ink/70 mb-4">From custom software to SaaS platforms and AI integration, with web/mobile apps, UI/UX and Digital Growth to support the full product lifecycle.</p>
-                <ul class="space-y-1 text-ink/70">
+                <ul class="list-style-four text-ink/70">
                     <li>Custom Software</li>
                     <li>SaaS Development</li>
                     <li>AI Integration</li>
@@ -81,14 +86,19 @@
     <div class="container-nb">
         <div class="flex flex-wrap gap-6 justify-center">
             @foreach ([
-                ['icon' => 'flaticon-idea', 'title' => 'Make Strategy', 'text' => 'Define objective brand Plans, keyword research & positioning strategy.'],
-                ['icon' => 'flaticon-graphic-design', 'title' => 'Website Design', 'text' => 'We settle on some initial design drafts for website & choose one concept.'],
-                ['icon' => 'flaticon-coding-2', 'title' => 'Development', 'text' => 'To make the content, information architecture, visual design all work'],
-                ['icon' => 'flaticon-checklist', 'title' => 'Project Testing', 'text' => 'Our team of experts are always available for any updates you may need.'],
-                ['icon' => 'flaticon-goal', 'title' => 'Project Lunch', 'text' => 'Sit amet conse adipies elitec eiusmod tempors sncidide sesy labore'],
+                ['icon' => 'flaticon-idea', 'title' => 'Make Strategy', 'text' => 'Define objective brand Plans, keyword research & positioning strategy.', 'color' => '#3180fc'],
+                ['icon' => 'flaticon-graphic-design', 'title' => 'Website Design', 'text' => 'We settle on some initial design drafts for website & choose one concept.', 'color' => '#16b4f2'],
+                ['icon' => 'flaticon-coding-2', 'title' => 'Development', 'text' => 'To make the content, information architecture, visual design all work', 'color' => '#f1b000'],
+                ['icon' => 'flaticon-checklist', 'title' => 'Project Testing', 'text' => 'Our team of experts are always available for any updates you may need.', 'color' => '#8400ff'],
+                ['icon' => 'flaticon-goal', 'title' => 'Project Launch', 'text' => 'We launch, monitor and stay on hand for the improvements that follow.', 'color' => '#ff7506'],
             ] as $item)
-            <div class="w-full sm:w-1/2 md:w-1/5" data-reveal>
-                <div class="text-3xl text-accent mb-4"><i class="{{ $item['icon'] }}"></i></div>
+            <div class="what-we-do-card text-center w-full sm:w-1/2 md:w-1/5 rounded-2xl p-6" style="background: color-mix(in srgb, {{ $item['color'] }} 8%, white);" data-reveal>
+                <div class="relative inline-flex mb-4">
+                    <div class="absolute -inset-3 rounded-full blur-xl opacity-50" style="background: {{ $item['color'] }};" aria-hidden="true"></div>
+                    <div class="relative w-14 h-14 rounded-2xl flex items-center justify-center mx-auto" style="background: {{ $item['color'] }};">
+                        <i class="{{ $item['icon'] }} text-2xl text-white"></i>
+                    </div>
+                </div>
                 <h5 class="font-bold">{{ $item['title'] }}</h5>
                 <p class="mt-2 text-ink/70">{{ $item['text'] }}</p>
             </div>
@@ -109,7 +119,7 @@
                 <span class="text-accent uppercase text-sm font-semibold">What We Offer</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Web Design & Development</h2>
                 <p class="text-ink/70">The easy-to-use, search engine friendly, flexible development platform is currently used on over 35% of all websites. WordPress provides a user friendly content mana gement system (CMS), that allows you to easily make changes on the fly</p>
-                <ul class="space-y-1 text-ink/70 mt-4 mb-6">
+                <ul class="list-style-four text-ink/70 mt-4 mb-6">
                     <li>Easy to edit & Search engine friendly</li>
                     <li>Highly customizable</li>
                     <li>Most popular CMS in the world</li>
@@ -129,7 +139,7 @@
                 <span class="text-accent uppercase text-sm font-semibold">Responsive Design</span>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Design For Any Device Responsive Web Design</h2>
                 <p class="text-ink/70">Responsive web design allows your website to adapt to and provide an optimal experience on any device it's being viewed from. This means that your website will look great and function flawlessly for a user on a desktop computer, laptop, tablet, or smartphone</p>
-                <ul class="space-y-1 text-ink/70 mt-4 mb-6">
+                <ul class="list-style-four text-ink/70 mt-4 mb-6">
                     <li>Mobile-friendly</li>
                     <li>Design for every device</li>
                     <li>Positive UX & Helps SEO</li>

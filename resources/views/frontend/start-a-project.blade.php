@@ -139,7 +139,7 @@
                         <div id="reviewSummary" class="mb-6"></div>
                         <div class="bg-surface-alt rounded-lg p-6">
                             <strong>What happens next?</strong>
-                            <ul class="list-disc list-inside mt-3 space-y-1 text-ink/70">
+                            <ul class="list-style-four mt-3 text-ink/70">
                                 <li>We'll review your requirements within a few hours</li>
                                 <li>You'll receive a tailored response within 24 hours</li>
                                 <li>We'll schedule a call to discuss the details</li>
