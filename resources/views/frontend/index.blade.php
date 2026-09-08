@@ -1,4 +1,5 @@
 @include('frontend.layouts.header-v2')
+<script src='https://www.google.com/recaptcha/api.js' async defer></script>
 @include('frontend.layouts.nav-v2')
 @include('frontend.layouts.slider-v2')
 

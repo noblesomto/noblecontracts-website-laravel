@@ -59,8 +59,7 @@
     <!-- Flaticon -->
     <link rel="stylesheet" href="{{ asset('frontend/css/flaticon.min.css') }}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('frontend/css/fontawesome-5.14.0.min.css') }}">
-    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <link rel="stylesheet" href="{{ asset('frontend/css/fontawesome-subset.min.css') }}">
 
     <!--Floating WhatsApp css-->
      <link rel="stylesheet" href="{{ asset('frontend/css/floating-wpp.min.css') }}">
