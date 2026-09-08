@@ -11,16 +11,18 @@
             <a href="/" class="text-white hover:text-accent">Home</a>
             <div class="relative group">
                 <a href="/services" class="text-white/80 hover:text-accent">Services <i class="fas fa-angle-down text-xs ml-[5px]"></i></a>
-                <ul class="absolute left-0 top-full mt-2 min-w-[260px] bg-[#181b23] border border-white/10 rounded shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible focus-within:opacity-100 focus-within:visible transition text-base">
-                    <li><a href="/custom-software" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Custom Software</a></li>
-                    <li><a href="/saas-development" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">SaaS Development</a></li>
-                    <li><a href="/ai-integration" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">AI Integration</a></li>
-                    <li><a href="/services#web-mobile-applications" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Web &amp; Mobile Applications</a></li>
-                    <li><a href="/api-integration" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">API &amp; System Integration</a></li>
-                    <li><a href="/ui-ux-design" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">UI/UX &amp; Product Design</a></li>
-                    <li><a href="/cloud-deployment" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Cloud &amp; Deployment</a></li>
-                    <li><a href="/services#digital-growth" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Digital Growth</a></li>
-                </ul>
+                <div class="absolute left-0 top-full pt-2 w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible focus-within:opacity-100 focus-within:visible transition">
+                    <ul class="min-w-[260px] bg-[#181b23] border border-white/10 rounded shadow-lg py-2 text-base">
+                        <li><a href="/custom-software" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Custom Software</a></li>
+                        <li><a href="/saas-development" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">SaaS Development</a></li>
+                        <li><a href="/ai-integration" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">AI Integration</a></li>
+                        <li><a href="/services#web-mobile-applications" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Web &amp; Mobile Applications</a></li>
+                        <li><a href="/api-integration" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">API &amp; System Integration</a></li>
+                        <li><a href="/ui-ux-design" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">UI/UX &amp; Product Design</a></li>
+                        <li><a href="/cloud-deployment" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Cloud &amp; Deployment</a></li>
+                        <li><a href="/services#digital-growth" class="block px-4 py-2 text-white/80 hover:bg-white/5 hover:text-accent">Digital Growth</a></li>
+                    </ul>
+                </div>
             </div>
             <a href="/products" class="text-white/80 hover:text-accent">Products</a>
             <a href="/our-work" class="text-white/80 hover:text-accent">Our Work</a>
