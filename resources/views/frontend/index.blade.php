@@ -6,22 +6,19 @@
 <section class="py-16 bg-surface-alt bg-cover bg-center" style="background-image: url({{ asset('frontend/images/background/counter-bg.png') }});">
     <div class="container-nb">
         <div class="flex flex-wrap justify-center gap-8 text-center">
-            <div class="w-full sm:w-1/2 md:w-1/4" data-reveal>
-                <i class="flaticon-startup text-3xl text-accent"></i>
-                <h5 class="mt-4 font-semibold">11+ Years in Software Development</h5>
+            @foreach ([
+                ['icon' => 'flaticon-startup', 'text' => '11+ Years in Software Development'],
+                ['icon' => 'flaticon-online', 'text' => 'Products Built &amp; Operated'],
+                ['icon' => 'flaticon-target', 'text' => 'Business-Focused Engineering'],
+                ['icon' => 'flaticon-global', 'text' => 'Nigeria &middot; UK &middot; International'],
+            ] as $stat)
+            <div class="w-full sm:w-[calc(50%-1rem)] md:w-[calc(25%-1.5rem)]" data-reveal>
+                <div class="trust-stat-card">
+                    <i class="{{ $stat['icon'] }}"></i>
+                    <h5>{!! $stat['text'] !!}</h5>
+                </div>
             </div>
-            <div class="w-full sm:w-1/2 md:w-1/4" data-reveal>
-                <i class="flaticon-online text-3xl text-accent"></i>
-                <h5 class="mt-4 font-semibold">Products Built &amp; Operated</h5>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4" data-reveal>
-                <i class="flaticon-target text-3xl text-accent"></i>
-                <h5 class="mt-4 font-semibold">Business-Focused Engineering</h5>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4" data-reveal>
-                <i class="flaticon-global text-3xl text-accent"></i>
-                <h5 class="mt-4 font-semibold">Nigeria &middot; UK &middot; International</h5>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

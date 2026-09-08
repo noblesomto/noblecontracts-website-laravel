@@ -231,3 +231,24 @@
   font-weight: 700;
   text-decoration: none;
 }
+
+.trust-stat-card {
+  background: #fff;
+  border-radius: 7px;
+  padding: 35px 20px;
+  transition: transform 0.5s ease;
+}
+.trust-stat-card:hover {
+  transform: translateY(-15px);
+}
+.trust-stat-card i {
+  font-size: 60px;
+  line-height: 1;
+  color: var(--color-accent);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.trust-stat-card h5 {
+  margin: 0;
+  font-weight: 600;
+}
