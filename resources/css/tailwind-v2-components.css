@@ -303,3 +303,28 @@
   background: radial-gradient(circle, var(--color-accent-cyan) 0%, transparent 70%);
   opacity: 0.12;
 }
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px 5px 10px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid currentColor;
+  margin-bottom: 14px;
+}
+.status-pill:before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  flex: none;
+}
+.status-pill.is-live { color: #0a8a3e; }
+.status-pill.is-active { color: var(--color-signal-text); }
+.status-pill.is-progress { color: #b3720c; }
+.status-pill.is-planned { color: #5b6472; }

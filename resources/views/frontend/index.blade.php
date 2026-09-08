@@ -151,26 +151,30 @@
 <section class="py-20">
     <div class="container-nb">
         <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-            <span class="text-accent uppercase text-sm font-semibold">Proof, Not Promises</span>
+            <div class="flex items-center justify-center gap-4 text-accent font-bold">
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+                <span class="underline underline-offset-4">Proof, Not Promises</span>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
             <h2 class="text-3xl md:text-4xl font-bold mt-3">Products We've Built</h2>
             <p class="mt-5 text-ink/70">We build and operate our own digital products, giving us first-hand experience taking software from concept through development, deployment and continuous improvement.</p>
         </div>
         <div class="flex flex-wrap gap-4 justify-center">
             @foreach ([
-                ['href' => '/products#botwave', 'pill' => 'Live — Free Trial', 'title' => 'BotWave', 'text' => 'AI-powered customer support bots (WhatsApp/Telegram/website).'],
-                ['href' => '/products#verifyme-plus', 'pill' => 'Live / Evolving', 'title' => 'VerifyMe+', 'text' => 'AI-assisted scam-reporting platform for Nigeria.'],
-                ['href' => '/products#scanoriginal', 'pill' => 'Active MVP Development', 'title' => 'ScanOriginal', 'text' => 'Anti-counterfeit verification PWA.'],
-                ['href' => '/products#cleanpilot', 'pill' => 'Live', 'title' => 'CleanPilot', 'text' => 'SaaS operating system for UK cleaning businesses.'],
+                ['href' => '/products#botwave', 'pill' => 'Live — Free Trial', 'status' => 'is-live', 'title' => 'BotWave', 'text' => 'AI-powered customer support bots (WhatsApp/Telegram/website).'],
+                ['href' => '/products#verifyme-plus', 'pill' => 'Live / Evolving', 'status' => 'is-live', 'title' => 'VerifyMe+', 'text' => 'AI-assisted scam-reporting platform for Nigeria.'],
+                ['href' => '/products#scanoriginal', 'pill' => 'Active MVP Development', 'status' => 'is-active', 'title' => 'ScanOriginal', 'text' => 'Anti-counterfeit verification PWA.'],
+                ['href' => '/products#cleanpilot', 'pill' => 'Live', 'status' => 'is-live', 'title' => 'CleanPilot', 'text' => 'SaaS operating system for UK cleaning businesses.'],
             ] as $item)
             <a href="{{ $item['href'] }}" class="block w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] border border-border-soft rounded-lg p-6 no-underline text-ink hover:border-accent" data-reveal>
-                <span class="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-accent/10 text-accent">{{ $item['pill'] }}</span>
+                <span class="status-pill {{ $item['status'] }}">{{ $item['pill'] }}</span>
                 <h5 class="mt-3 font-bold">{{ $item['title'] }}</h5>
                 <p class="mt-1 text-ink/70">{{ $item['text'] }}</p>
             </a>
             @endforeach
         </div>
         <div class="text-center mt-10">
-            <a href="/products" class="theme-btn" style="background:transparent;color:var(--color-accent);border:1px solid var(--color-accent);">See All Products <i class="fas fa-angle-double-right"></i></a>
+            <a href="/products" class="theme-btn" style="background:var(--color-accent-cyan);">See All Products <i class="fas fa-angle-double-right"></i></a>
         </div>
     </div>
 </section>
