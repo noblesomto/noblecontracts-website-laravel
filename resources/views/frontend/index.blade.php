@@ -183,39 +183,54 @@
 <section class="pt-12 pb-20">
     <div class="container-nb">
         <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
-            <span class="text-accent uppercase text-sm font-semibold">Client Work</span>
+            <div class="flex items-center justify-center gap-4 text-accent font-bold">
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+                <span class="underline underline-offset-4">Client Work</span>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
             <h3 class="text-2xl md:text-3xl font-bold mt-3">Platforms We've Delivered for Clients</h3>
             <p class="mt-5 text-ink/70">We've helped businesses turn ideas, services and existing processes into modern digital experiences and software platforms. From property and media platforms to marketplaces and service-booking systems, our work is designed around how each business operates.</p>
         </div>
     </div>
     <div id="portfolio-carousel-v2" class="overflow-hidden">
-        <div class="embla__container flex gap-6 px-4">
+        <div class="embla__container flex gap-6 px-4 py-2">
             @foreach ([
                 ['img' => 'oracletv.jpg', 'w' => 900, 'h' => 471, 'alt' => 'Oraclefilms TV', 'href' => '/our-work#oraclefilms-tv', 'title' => 'Oraclefilms TV', 'cat' => 'Media / Entertainment Platform'],
                 ['img' => 'jjhomes.jpg', 'w' => 900, 'h' => 433, 'alt' => 'JJ Homes London', 'href' => '/our-work#jj-homes-london', 'title' => 'JJ Homes London', 'cat' => 'Property / Real Estate Platform'],
                 ['img' => 'marketplace.jpg', 'w' => 900, 'h' => 434, 'alt' => 'Marketplace Naija/Ghana', 'href' => '/our-work#marketplace-group', 'title' => 'Marketplace Naija/Ghana', 'cat' => 'Classifieds Platform'],
             ] as $item)
             <div class="min-w-0 flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
-                <div class="relative rounded-lg overflow-hidden group">
-                    <img src="{{ asset('frontend/images/portfolio/' . $item['img']) }}" width="{{ $item['w'] }}" height="{{ $item['h'] }}" loading="lazy" decoding="async" alt="{{ $item['alt'] }}" class="w-full">
-                    <a href="{{ $item['href'] }}" class="absolute inset-0 flex items-center justify-center bg-ink/0 group-hover:bg-ink/40 transition text-white opacity-0 group-hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></a>
-                </div>
-                <h4 class="mt-4"><a href="{{ $item['href'] }}" class="hover:text-accent">{{ $item['title'] }}</a></h4>
-                <span class="text-ink/60 text-sm">{{ $item['cat'] }}</span>
+                <a href="{{ $item['href'] }}" class="portfolio-card-v2 block no-underline text-ink">
+                    <div class="portfolio-card-v2__image group">
+                        <img src="{{ asset('frontend/images/portfolio/' . $item['img']) }}" width="{{ $item['w'] }}" height="{{ $item['h'] }}" loading="lazy" decoding="async" alt="{{ $item['alt'] }}" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-ink/0 group-hover:bg-ink/40 transition text-white opacity-0 group-hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></div>
+                    </div>
+                    <div class="portfolio-card-v2__body">
+                        <h4 class="font-bold">{{ $item['title'] }}</h4>
+                        <div class="portfolio-card-v2__category">{{ $item['cat'] }}</div>
+                    </div>
+                </a>
             </div>
             @endforeach
             <div class="min-w-0 flex-[0_0_85%] sm:flex-[0_0_45%] lg:flex-[0_0_30%]">
-                <div class="relative rounded-lg overflow-hidden bg-ink flex items-center justify-center" style="min-height:250px;">
-                    <i class="fas fa-bolt text-4xl text-accent-cyan"></i>
-                    <a href="/our-work#quickerrands" class="absolute inset-0 flex items-center justify-center bg-ink/0 hover:bg-ink/40 transition text-white opacity-0 hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></a>
-                </div>
-                <h4 class="mt-4"><a href="/our-work#quickerrands" class="hover:text-accent">QuickErrands</a></h4>
-                <span class="text-ink/60 text-sm">On-Demand Services Booking Platform</span>
+                <a href="/our-work#quickerrands" class="portfolio-card-v2 block no-underline text-ink">
+                    <div class="portfolio-card-v2__image bg-ink flex items-center justify-center group">
+                        <i class="fas fa-bolt text-4xl text-accent-cyan"></i>
+                        <div class="absolute inset-0 flex items-center justify-center bg-ink/0 group-hover:bg-ink/40 transition text-white opacity-0 group-hover:opacity-100"><i class="far fa-arrow-right text-2xl"></i></div>
+                    </div>
+                    <div class="portfolio-card-v2__body">
+                        <h4 class="font-bold">QuickErrands</h4>
+                        <div class="portfolio-card-v2__category">On-Demand Services Booking Platform</div>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
-    <div class="container-nb text-center mt-10">
-        <a href="/our-work" class="theme-btn" style="background:transparent;color:var(--color-accent);border:1px solid var(--color-accent);">View All Our Work <i class="fas fa-angle-double-right"></i></a>
+    <div class="container-nb">
+        <div id="portfolio-carousel-dots-v2" class="flex items-center justify-center gap-2 mt-8"></div>
+        <div class="text-center mt-8">
+            <a href="/our-work" class="theme-btn" style="background:var(--color-accent-cyan);">View All Our Work <i class="fas fa-angle-double-right"></i></a>
+        </div>
     </div>
 </section>
 <!-- Client Work end -->
