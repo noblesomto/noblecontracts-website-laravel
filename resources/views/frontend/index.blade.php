@@ -310,17 +310,21 @@
 <!-- Testimonial Area Start -->
 <section class="py-20 border-t border-border-soft">
     <div class="container-nb">
-        <div class="flex flex-wrap items-center justify-between gap-4 mb-12" data-reveal>
+        <div class="flex flex-wrap items-center justify-between gap-4 pb-10 border-b border-border-soft" data-reveal>
             <div>
-                <span class="text-accent uppercase text-sm font-semibold">Clients Testimonials</span>
+                <div class="flex items-center gap-4 text-accent font-bold">
+                    <i class="fas fa-ellipsis-h text-2xl"></i>
+                    <span class="underline underline-offset-4">Clients Testimonials</span>
+                </div>
                 <h2 class="text-3xl md:text-4xl font-bold mt-3">Clients feedback</h2>
             </div>
-            <div class="flex gap-3">
-                <button class="work-prev w-11 h-11 rounded-full border border-border-soft flex items-center justify-center" aria-label="Previous testimonial"><i class="far fa-arrow-left"></i></button>
-                <button class="work-next w-11 h-11 rounded-full border border-border-soft flex items-center justify-center" aria-label="Next testimonial"><i class="far fa-arrow-right"></i></button>
+            <div class="relative flex gap-3">
+                <div class="absolute -inset-6 rounded-full blur-2xl opacity-20 -z-10" style="background: var(--color-accent);" aria-hidden="true"></div>
+                <button class="work-prev w-11 h-11 rounded-full bg-white border border-border-soft flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition" aria-label="Previous testimonial"><i class="far fa-arrow-left"></i></button>
+                <button class="work-next w-11 h-11 rounded-full bg-white border border-border-soft flex items-center justify-center hover:bg-accent hover:text-white hover:border-accent transition" aria-label="Next testimonial"><i class="far fa-arrow-right"></i></button>
             </div>
         </div>
-        <div id="testimonial-carousel-v2" class="overflow-hidden">
+        <div id="testimonial-carousel-v2" class="overflow-hidden mt-12">
             <div class="embla__container flex gap-8">
                 @foreach ([
                     ['quote' => 'Professional, creative, and highly responsive. Our new site has made it much easier for clients to learn about our services and get in touch. Highly recommended.', 'name' => 'Joel Hong', 'role' => 'CEO, JJ Homes Management', 'href' => '/our-work#jj-homes-london'],
@@ -330,10 +334,20 @@
                     ['quote' => 'Their expertise transformed our outdated website into a modern, client-friendly platform. We’ve received so many compliments from partners and customers alike.', 'name' => 'Collins', 'role' => 'Director, Quick Errands', 'href' => '/our-work#quickerrands'],
                 ] as $t)
                 <div class="min-w-0 flex-[0_0_100%] md:flex-[0_0_48%]">
-                    <p class="text-lg text-ink/80">&ldquo;{{ $t['quote'] }}&rdquo;</p>
-                    <div class="mt-4">
-                        <span class="font-bold block">{{ $t['name'] }}</span>
-                        <a href="{{ $t['href'] }}" class="text-ink/60 text-sm hover:text-accent">{{ $t['role'] }}</a>
+                    <div class="flex gap-5">
+                        <div class="shrink-0 w-11 h-11 rounded-full bg-accent flex items-center justify-center">
+                            <i class="fas fa-quote-right text-white"></i>
+                        </div>
+                        <div>
+                            <p class="text-lg text-ink/80">{{ $t['quote'] }}</p>
+                            <div class="mt-4 flex items-center gap-3">
+                                <span class="w-6 h-px bg-accent"></span>
+                                <div>
+                                    <span class="font-bold block text-accent">{{ $t['name'] }}</span>
+                                    <a href="{{ $t['href'] }}" class="text-ink/60 text-sm hover:text-accent">{{ $t['role'] }}</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 @endforeach
