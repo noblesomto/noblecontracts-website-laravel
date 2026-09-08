@@ -13,17 +13,29 @@
   --color-ink: #0a0e17;
   --color-ink-soft: #101a30;
   --color-surface-alt: #f4f6fb;
-  --color-accent: #0066ff;
+  --color-accent: #fc653c;
   --color-accent-cyan: #01c9f5;
   --color-signal-text: #0057b8;
   --color-border-soft: #e4e8f0;
   --color-brand-orange: #ff8a00;
+
+  --font-sans: 'Catamaran', sans-serif;
+  --font-heading: 'Kumbh Sans', sans-serif;
 
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --breakpoint-2xl: 1400px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
 }
 
 @layer utilities {
