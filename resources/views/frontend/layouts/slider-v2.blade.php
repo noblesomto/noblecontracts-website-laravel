@@ -25,20 +25,20 @@
     <div class="hero-v2-glow hero-v2-glow--tr" aria-hidden="true"></div>
     <div class="hero-v2-glow hero-v2-glow--tl" aria-hidden="true"></div>
 
-    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-stretch min-h-[560px] md:min-h-[640px] lg:min-h-[680px]">
-        <div class="flex flex-col justify-center gap-6 px-6 md:px-12 lg:px-16 py-16 md:py-20 relative">
-            <div class="hidden md:block w-5 h-5 rounded-full border-2 border-white/50 absolute top-6 left-8 lg:left-16"></div>
+    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 items-stretch min-h-[560px] md:min-h-[calc(100vh-105px)]">
+        <div class="flex flex-col justify-center gap-6 px-6 md:px-16 lg:px-24 py-16 md:py-20 relative">
+            <div class="hidden md:block w-5 h-5 rounded-full border-2 border-white/50 absolute top-6 left-16 lg:left-24"></div>
 
-            <div id="hero-v2-eyebrow" class="hero-v2-fade text-white/70 text-base font-medium">{!! $heroFirst['eyebrow'] !!}</div>
-            <h1 id="hero-v2-headline" class="hero-v2-fade font-bold text-white text-[34px] sm:text-[42px] md:text-[48px] lg:text-[56px] leading-[1.1] max-w-xl m-0">{{ $heroFirst['headline'] }}</h1>
-            <p id="hero-v2-body" class="hero-v2-fade text-white/60 text-base leading-relaxed max-w-lg m-0">{{ $heroFirst['body'] }}</p>
+            <div id="hero-v2-eyebrow" class="hero-v2-fade text-white/70 text-lg font-medium">{!! $heroFirst['eyebrow'] !!}</div>
+            <h1 id="hero-v2-headline" class="hero-v2-fade font-bold text-white text-[36px] sm:text-[46px] md:text-[54px] lg:text-[64px] leading-[1.1] max-w-2xl m-0">{{ $heroFirst['headline'] }}</h1>
+            <p id="hero-v2-body" class="hero-v2-fade text-white/60 text-lg leading-relaxed max-w-lg m-0">{{ $heroFirst['body'] }}</p>
 
             <div class="flex flex-wrap gap-4 mt-2">
                 <a href="/start-a-project" class="hero-v2-btn hero-v2-btn--solid">Start a Project <span>&raquo;</span></a>
                 <a href="/our-work" class="hero-v2-btn hero-v2-btn--outline">View Our Work <span>&raquo;</span></a>
             </div>
 
-            <div id="hero-v2-dots" class="flex gap-2 mt-5">
+            <div id="hero-v2-dots" class="flex gap-3 mt-5">
                 @foreach ($heroSlides as $i => $slide)
                 <button type="button" class="hero-v2-dot{{ $i === 0 ? ' is-active' : '' }}" data-index="{{ $i }}" aria-label="Go to slide {{ $i + 1 }}"></button>
                 @endforeach
