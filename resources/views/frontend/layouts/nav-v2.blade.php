@@ -4,7 +4,7 @@
 <header id="nav-v2-header" class="bg-ink border-b border-white/10 sticky top-0 z-30">
     <div class="container-nb flex items-center justify-between py-6">
         <a href="/" class="shrink-0">
-            <img src="{{ asset('frontend/images/logos/logo-nav.png') }}" width="450" height="148" class="h-14 w-auto" alt="Noble IT Services" title="Noble IT Services">
+            <img src="{{ asset('frontend/images/logos/logo-nav.png') }}" width="450" height="148" class="h-9 lg:h-14 w-auto" alt="Noble IT Services" title="Noble IT Services">
         </a>
 
         <nav class="hidden lg:flex items-center gap-10 text-lg font-medium">
@@ -30,7 +30,9 @@
             <a href="/contact-us" class="text-white/80 hover:text-accent">Contact</a>
         </nav>
 
-        <a href="/start-a-project" class="hidden lg:inline-flex theme-btn theme-btn--outline text-base px-8 py-4">Start a Project <i class="fas fa-angle-double-right"></i></a>
+        <div class="hidden lg:flex">
+            <a href="/start-a-project" class="theme-btn theme-btn--outline text-base px-8 py-4">Start a Project <i class="fas fa-angle-double-right"></i></a>
+        </div>
 
         <button id="nav-v2-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-v2-menu" class="lg:hidden p-2">
             <span class="block w-7 h-0.5 bg-white mb-2"></span>
