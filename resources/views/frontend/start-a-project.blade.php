@@ -18,24 +18,26 @@
 
 <section class="py-20">
     <div class="container-nb max-w-3xl mx-auto">
-        <div class="border border-border-soft rounded-lg p-8 md:p-12">
-            <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
-                <h2 class="text-2xl font-bold m-0">Get Your Free Project Scope</h2>
-                <span class="text-accent-cyan text-sm font-semibold">Trusted Partner</span>
+        <div class="rounded-2xl overflow-hidden border border-border-soft shadow-sm">
+            <div class="bg-ink text-white p-8 md:p-10">
+                <div class="flex flex-wrap justify-between items-center gap-3 mb-3">
+                    <h2 class="text-2xl font-bold m-0">Get Your Free Project Scope</h2>
+                    <span class="status-pill is-active">Trusted Partner</span>
+                </div>
+                <p class="text-white/70 m-0">Tell us about your vision and receive a tailored response within 24 hours.</p>
             </div>
-            <p class="text-ink/70 mb-8">Tell us about your vision and receive a tailored response within 24 hours.</p>
 
-            <div class="mb-8">
+            <div class="bg-surface-alt px-8 md:px-10 py-5">
                 <div class="flex justify-between items-center mb-2">
                     <span id="progressText" class="font-bold">Step 1 of 4</span>
                     <span id="progressPercentage" class="text-ink/60">25%</span>
                 </div>
-                <div class="h-2 bg-surface-alt rounded-full overflow-hidden">
-                    <div id="progressBar" class="h-full bg-accent transition-all" style="width: 25%;"></div>
+                <div class="h-2 bg-white rounded-full overflow-hidden">
+                    <div id="progressBar" class="h-full bg-accent-cyan transition-all" style="width: 25%;"></div>
                 </div>
             </div>
 
-            <div class="quote-wizard-body">
+            <div class="quote-wizard-body bg-white p-8 md:p-10">
                 <form id="quoteForm" novalidate>
                     @csrf
                     <input type="text" name="company_website" class="quote-honeypot" tabindex="-1" autocomplete="off">
