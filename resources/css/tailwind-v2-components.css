@@ -461,3 +461,49 @@
   background: var(--color-accent);
   color: #fff;
 }
+
+.case-study-item {
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  padding: 34px;
+  background: #fff;
+  transition: border-color 0.25s ease;
+}
+.case-study-item:hover {
+  border-color: var(--color-accent);
+}
+.case-study-item.on-dark {
+  background: var(--color-ink-soft);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+}
+.case-study-item.on-dark:hover {
+  border-color: var(--color-accent-cyan);
+}
+.case-study-item.on-dark h4 {
+  color: #fff;
+}
+.case-study-item.on-dark .case-study-facts dt {
+  color: #fff;
+}
+.case-study-item.on-dark .case-study-facts dd {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.case-study-facts {
+  margin: 0;
+}
+.case-study-facts dt {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
+  margin: 18px 0 6px;
+}
+.case-study-facts dt:first-child {
+  margin-top: 0;
+}
+.case-study-facts dd {
+  margin: 0;
+  color: #5b6472;
+}
