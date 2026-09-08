@@ -361,7 +361,7 @@
 <section class="bg-ink text-white py-16">
     <div class="container-nb flex flex-wrap items-center justify-between gap-8" data-reveal>
         <div class="max-w-2xl">
-            <h2 class="text-2xl md:text-3xl font-bold">Have an Idea Worth Building?</h2>
+            <h2 class="text-3xl md:text-4xl font-bold">Have an Idea Worth Building?</h2>
             <p class="mt-3 text-white/70">Whether you're launching a SaaS product, modernising an existing system, automating a business process or exploring what AI can do for your organisation, we can help you turn the idea into working software. Tell us what you're building.</p>
         </div>
         <a href="/start-a-project" class="theme-btn" style="background:transparent;border:1px solid #fff;">Start a Project <i class="fas fa-angle-double-right"></i></a>
@@ -370,31 +370,34 @@
 <!-- Final CTA end -->
 
 <!-- Contact Area Start -->
-<section class="bg-ink text-white py-20">
-    <div class="container-nb flex flex-wrap justify-between gap-12">
+<section class="relative bg-ink text-white py-20 overflow-hidden">
+    <div class="contact-v2-glow contact-v2-glow--br" aria-hidden="true"></div>
+    <div class="contact-v2-glow contact-v2-glow--tr" aria-hidden="true"></div>
+    <div class="contact-v2-dots hidden lg:block" style="top: 20px; right: 60px;" aria-hidden="true"></div>
+    <div class="container-nb relative z-10 flex flex-wrap justify-between gap-12">
         <div class="w-full lg:w-5/12" data-reveal>
-            <h2 class="text-2xl md:text-3xl font-bold mb-8">Have any project on mind! feel free contact with us or <span class="text-accent-cyan">say hello</span></h2>
-            <div class="space-y-6">
-                <div class="flex gap-4">
-                    <i class="fal fa-map-marker-alt text-accent-cyan text-xl"></i>
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Have any project on mind! feel free contact with us or <span class="text-accent">say hello</span></h2>
+            <div class="space-y-6 border border-white/15 rounded-2xl p-6">
+                <div class="flex items-center gap-4">
+                    <div class="contact-info-badge-v2"><i class="fal fa-map-marker-alt text-white"></i></div>
                     <div>
                         <span class="block text-white/60 text-sm">Location</span>
                         <b class="font-normal">Plot 3 hon Rufus Oyedepo Sangotedo, Lagos</b>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <i class="far fa-envelope-open-text text-accent-cyan text-xl"></i>
+                <div class="flex items-center gap-4">
+                    <div class="contact-info-badge-v2"><i class="far fa-envelope-open-text text-white"></i></div>
                     <div>
                         <span class="block text-white/60 text-sm">Email Address</span>
-                        <b class="font-normal"><a href="mailto:info@nobleitservices.ng" class="hover:text-accent-cyan">info@nobleitservices.ng</a></b>
+                        <b class="font-normal"><a href="mailto:info@nobleitservices.ng" class="hover:text-accent">info@nobleitservices.ng</a></b>
                     </div>
                 </div>
-                <div class="flex gap-4">
-                    <i class="far fa-phone text-accent-cyan text-xl"></i>
+                <div class="flex items-center gap-4">
+                    <div class="contact-info-badge-v2"><i class="far fa-phone text-white"></i></div>
                     <div>
                         <span class="block text-white/60 text-sm">Phone No</span>
-                        <b class="font-normal block"><a href="callto:+234 907 372 9787" class="hover:text-accent-cyan">(+234) 907 372 9787</a></b>
-                        <b class="font-normal block"><a href="callto:+234 703 152 5786" class="hover:text-accent-cyan">(+234) 703 152 5786</a></b>
+                        <b class="font-normal block"><a href="callto:+234 907 372 9787" class="hover:text-accent">(+234) 907 372 9787</a></b>
+                        <b class="font-normal block"><a href="callto:+234 703 152 5786" class="hover:text-accent">(+234) 703 152 5786</a></b>
                     </div>
                 </div>
             </div>
@@ -402,7 +405,7 @@
         <div class="w-full lg:w-5/12" data-reveal>
             <form id="contact-area-form" class="text-ink bg-white rounded-lg p-8 flex flex-col gap-4" name="contact-area-form" action="/contact-us" method="post">
                 @csrf
-                <h4 class="font-bold text-xl mb-2">Send us Message</h4>
+                <h4 class="font-bold text-xl mb-2 text-center">Send us Message</h4>
                 <label for="full-name" class="sr-only">Full Name</label>
                 <input type="text" id="full-name" name="name" class="border border-border-soft rounded px-4 py-2" value="" placeholder="Full Name" required>
                 <label for="blog-email" class="sr-only">Email Address</label>
