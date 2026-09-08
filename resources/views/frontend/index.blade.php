@@ -108,25 +108,36 @@
 <!-- SaaS Pitch Block end -->
 
 <!-- AI Pitch Block start -->
-<section class="py-20 bg-ink text-white">
-    <div class="container-nb">
+<section class="ai-pitch relative py-20 bg-ink text-white overflow-hidden">
+    <div class="ai-pitch-glow ai-pitch-glow--right" aria-hidden="true"></div>
+    <div class="ai-pitch-glow ai-pitch-glow--left" aria-hidden="true"></div>
+    <div class="container-nb relative z-10">
         <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-            <span class="text-accent-cyan uppercase text-sm font-semibold">AI Solutions</span>
+            <div class="flex items-center justify-center gap-4 text-accent font-bold">
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+                <span class="underline underline-offset-4">AI Solutions</span>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
             <h2 class="text-3xl md:text-4xl font-bold mt-3">AI That Solves Real Problems</h2>
             <p class="mt-5 text-white/70">AI is most valuable when it improves the way a business operates. We integrate AI into software products, workflows and customer experiences &mdash; from intelligent assistants and automated processes to document analysis, AI search and LLM-powered applications, as built into BotWave, VerifyMe+ and ScanOriginal.</p>
-            <a href="/ai-integration" class="theme-btn mt-6" style="background:transparent;border:1px solid #fff;">Explore AI Solutions <i class="fas fa-angle-double-right"></i></a>
+            <a href="/ai-integration" class="theme-btn mt-6" style="background:var(--color-accent-cyan);">Explore AI Solutions <i class="fas fa-angle-double-right"></i></a>
         </div>
         <div class="flex flex-wrap gap-8 justify-center">
             @foreach ([
-                ['icon' => 'flaticon-technical-support', 'title' => 'AI Assistants', 'text' => 'Intelligent conversational experiences for websites, applications and messaging platforms.'],
-                ['icon' => 'flaticon-settings', 'title' => 'AI Agents', 'text' => 'Automated systems capable of handling defined business tasks and workflows.'],
-                ['icon' => 'flaticon-search-location', 'title' => 'AI Search', 'text' => 'Smarter search and information retrieval powered by AI.'],
-                ['icon' => 'flaticon-checklist', 'title' => 'Document Intelligence', 'text' => 'Extract, analyse and understand information from business documents.'],
-                ['icon' => 'flaticon-optimization', 'title' => 'AI Automation', 'text' => 'Reduce repetitive work by connecting AI to business processes.'],
-                ['icon' => 'flaticon-web-programming', 'title' => 'LLM Integration', 'text' => 'Integrate modern language models where they create genuine business value.'],
+                ['icon' => 'flaticon-technical-support', 'title' => 'AI Assistants', 'text' => 'Intelligent conversational experiences for websites, applications and messaging platforms.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-settings', 'title' => 'AI Agents', 'text' => 'Automated systems capable of handling defined business tasks and workflows.', 'color' => '#06b6d4'],
+                ['icon' => 'flaticon-search-location', 'title' => 'AI Search', 'text' => 'Smarter search and information retrieval powered by AI.', 'color' => '#f59e0b'],
+                ['icon' => 'flaticon-checklist', 'title' => 'Document Intelligence', 'text' => 'Extract, analyse and understand information from business documents.', 'color' => '#8b5cf6'],
+                ['icon' => 'flaticon-optimization', 'title' => 'AI Automation', 'text' => 'Reduce repetitive work by connecting AI to business processes.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-web-programming', 'title' => 'LLM Integration', 'text' => 'Integrate modern language models where they create genuine business value.', 'color' => '#06b6d4'],
             ] as $item)
-            <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] border border-white/15 rounded-lg p-8" data-reveal>
-                <div class="text-3xl text-accent-cyan mb-4"><i class="{{ $item['icon'] }}"></i></div>
+            <div class="what-we-do-card w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] rounded-2xl p-8" style="background: color-mix(in srgb, {{ $item['color'] }} 14%, var(--color-ink));" data-reveal>
+                <div class="relative inline-flex mb-5">
+                    <div class="absolute -inset-3 rounded-full blur-xl opacity-60" style="background: {{ $item['color'] }};" aria-hidden="true"></div>
+                    <div class="relative w-16 h-16 rounded-2xl flex items-center justify-center" style="background: {{ $item['color'] }};">
+                        <i class="{{ $item['icon'] }} text-3xl text-white"></i>
+                    </div>
+                </div>
                 <h5 class="font-bold text-lg">{{ $item['title'] }}</h5>
                 <p class="mt-2 text-white/70">{{ $item['text'] }}</p>
             </div>
