@@ -34,8 +34,6 @@
     popup.querySelector('.whatsapp-widget-v2__close').addEventListener('click', function () {
       popup.classList.remove('is-open');
     });
-
-    setTimeout(function () { popup.classList.add('is-open'); }, 1500);
   }
 
   if (document.readyState === 'loading') {
