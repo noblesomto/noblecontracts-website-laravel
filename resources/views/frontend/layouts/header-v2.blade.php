@@ -49,12 +49,12 @@
     <link rel="shortcut icon" href="{{ asset('frontend/images/favicon.png') }}" type="image/x-icon">
     @if(request()->is('/'))
     <!-- Preload LCP hero image -->
-    <link rel="preload" as="image" href="{{ asset('frontend/images/slider/slide1.jpg') }}">
+    <link rel="preload" as="image" href="{{ asset('frontend/images/hero-v2/slide1.jpg') }}">
     @endif
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600&amp;family=Kumbh+Sans:wght@400;500;700&amp;family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600&amp;family=Kumbh+Sans:wght@400;500;700&amp;family=Shadows+Into+Light&amp;family=Poppins:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
     <!-- Flaticon -->
     <link rel="stylesheet" href="{{ asset('frontend/css/flaticon.min.css') }}">
