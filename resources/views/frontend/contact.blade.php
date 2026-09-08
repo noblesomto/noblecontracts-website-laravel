@@ -1,178 +1,127 @@
-@include('frontend.layouts.header')
-@include('frontend.layouts.nav')
+@include('frontend.layouts.header-v2')
+@include('frontend.layouts.nav-v2')
 
 <!-- Page Banner Start -->
-<section class="page-banner-area pt-245 rpt-150 pb-170 rpb-100 rel z-1 bgc-orange text-center">
-    <div class="container">
-        <div class="banner-inner rpt-10">
-            <h1 class="page-title wow fadeInUp delay-0-2s">Contact<span> us</span></h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
-                    <li class="breadcrumb-item"><a href="/">home</a></li>
-                    <li class="breadcrumb-item active">Contact Us</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <div class="banner-shapes">
-        
-        <img class="shape-one" src="{{ asset('frontend/images/shapes/hero-shape1.png') }}" alt="Shape">
-        <img class="shape-two" src="{{ asset('frontend/images/shapes/hero-shape2.png') }}" alt="Shape">
+<section class="pt-40 pb-24 text-center bg-ink text-white relative overflow-hidden">
+    <div class="container-nb relative z-10">
+        <h1 class="text-4xl font-bold" data-reveal>Contact <span class="text-accent-cyan">Us</span></h1>
+        <nav aria-label="breadcrumb" class="mt-4">
+            <ol class="flex justify-center gap-2 text-white/70">
+                <li><a href="/" class="hover:text-white">Home</a></li>
+                <li>/</li>
+                <li class="text-white">Contact Us</li>
+            </ol>
+        </nav>
     </div>
 </section>
 <!-- Page Banner End -->
 
 <!-- Contact Us Page Area start -->
-        <section class="contact-us-page-area py-130">
-            <div class="container">
-                <div class="row mt20">
-                    @if(session('status'))
-                       <div class="alert alert-{{session('status')['type']}}">
-                           <h3 class="text-danger">{{session('status')['text']}}</h3>
-                       </div>
-                   @endif
-                </div>
-            </div>
-            <div class="container">
-                <div class="row align-items-end justify-content-between">
-                    <div class="col-lg-7">
-                        <div class="contact-content rmb-65 wow fadeInRight delay-0-2s">
-                            <div class="section-title mb-25">
-                                <span class="sub-title style-two mb-15">Contact Us</span>
-                                <h2>Let’s Start New Project or work Together! Contact With us</h2>
-                            </div>
-                            <p>If you have questions, comments, suggestion or interest in a type of service not listed here, contact our support team, we look forward to providing you additional information and discussing new and exciting services to meet your needs.</p>
+<section class="py-20">
+    <div class="container-nb">
+        @if(session('status'))
+        <div class="mb-8 rounded-lg border border-{{ session('status')['type'] === 'success' ? 'green-300 bg-green-50' : 'red-300 bg-red-50' }} p-4">
+            <p class="font-bold {{ session('status')['type'] === 'success' ? 'text-green-700' : 'text-red-700' }}">{{ session('status')['text'] }}</p>
+        </div>
+        @endif
 
-                            <form id="contactForm" class="contactForm z-1 rel"  action="/contact-us" name="contactForm" method="post">
-                                @csrf
-                                <div class="row pt-15">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="name">Full Name</label>
-                                            <input type="text" id="name" name="name" class="form-control" value="" placeholder="Michael C. Coleman" required data-error="Please enter your name">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="email">Email Address</label>
-                                            <input type="email" id="email" name="email" class="form-control" value="" placeholder="support@gmail.com" required data-error="Please enter your Email">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="phone">Phone Number</label>
-                                            <input type="text" id="phone" name="phone" class="form-control" value="" placeholder="+000 (123) 456 88">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-30">
-                                        <div class="form-group">
-                                           <label for="select-subject">Select Requirments</label>
-                                           <select name="subject" id="select-subject">
-                                                <option value="website customize"="">Website customize</option>
-                                                <option value="Web Design & Development" selected>Web Design & Development</option>
-                                                <option value="Mobile Development">Mobile Development</option>
-                                                <option value="SEO">SEO</option>
-                                            </select>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="message">Write Message</label>
-                                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Write Message" required data-error="Please enter your Message"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
+        <div class="flex flex-wrap justify-between gap-12">
+            <div class="w-full lg:w-[calc(58%-1.5rem)]" data-reveal>
+                <span class="text-accent uppercase text-sm font-semibold">Contact Us</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-5">Let's Start a New Project or Work Together!</h2>
+                <p class="text-ink/70 mb-8">If you have questions, comments, suggestions or interest in a type of service not listed here, contact our support team &mdash; we look forward to providing you additional information and discussing new and exciting services to meet your needs.</p>
 
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <strong>ReCaptcha:</strong>
-                                            <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
-                                            @if ($errors->has('g-recaptcha-response'))
-                                                <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
-                                            @endif   
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group pt-5 mb-0">
-                                            <button type="submit" class="theme-btn w-100">Send Message <i class="fas fa-angle-double-right"></i></button>
-                                            <div id="msgSubmit" class="hidden"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                <form id="contactForm" class="contactForm" action="/contact-us" name="contactForm" method="post">
+                    @csrf
+                    <div class="flex flex-wrap gap-6">
+                        <div class="w-full md:w-[calc(50%-0.75rem)]">
+                            <label for="name" class="block mb-2 font-semibold">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full border border-border-soft rounded px-4 py-2.5" value="" placeholder="Michael C. Coleman" required data-error="Please enter your name">
+                        </div>
+                        <div class="w-full md:w-[calc(50%-0.75rem)]">
+                            <label for="email" class="block mb-2 font-semibold">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full border border-border-soft rounded px-4 py-2.5" value="" placeholder="support@gmail.com" required data-error="Please enter your Email">
+                        </div>
+                        <div class="w-full md:w-[calc(50%-0.75rem)]">
+                            <label for="phone" class="block mb-2 font-semibold">Phone Number</label>
+                            <input type="text" id="phone" name="phone" class="w-full border border-border-soft rounded px-4 py-2.5" value="" placeholder="+000 (123) 456 88">
+                        </div>
+                        <div class="w-full md:w-[calc(50%-0.75rem)]">
+                            <label for="select-subject" class="block mb-2 font-semibold">Select Requirements</label>
+                            <select name="subject" id="select-subject" class="w-full border border-border-soft rounded px-4 py-2.5">
+                                <option value="website customize">Website customize</option>
+                                <option value="Web Design & Development" selected>Web Design &amp; Development</option>
+                                <option value="Mobile Development">Mobile Development</option>
+                                <option value="SEO">SEO</option>
+                            </select>
+                        </div>
+                        <div class="w-full">
+                            <label for="message" class="block mb-2 font-semibold">Write Message</label>
+                            <textarea name="message" id="message" class="w-full border border-border-soft rounded px-4 py-2.5" rows="4" placeholder="Write Message" required data-error="Please enter your Message"></textarea>
+                        </div>
+                        <div class="w-full">
+                            <div class="g-recaptcha" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                            @if ($errors->has('g-recaptcha-response'))
+                                <span class="text-red-600 block mt-2">{{ $errors->first('g-recaptcha-response') }}</span>
+                            @endif
+                        </div>
+                        <div class="w-full">
+                            <button type="submit" class="theme-btn w-full justify-center">Send Message <i class="fas fa-angle-double-right"></i></button>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="contact-info wow fadeInLeft delay-0-2s">
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="fal fa-map-marker-alt"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">Location</span>
-                                    <span class="text">Plot 3 hon Rufus  Oyedepo Sangotedo, Lagos</span>
-                                </div>
-                            </div>
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="far fa-envelope-open-text"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">email address</span>
-                                    <span class="text">
-                                        <a href="mailto:contact@noblecontracts.com">contact@noblecontracts.com</a><br>
-                                        <a href="/">www.noblecontracts.com</a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="contact-info-item style-two">
-                                <div class="icon">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="title">Phone Number</span>
-                                    <span class="text">
-                                        Call <a href="calto:(234) 703 152 5786">(234) 703 152 5786</a><br>
-                                        Whatsapp : +234 703 152 5786
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="follow-us">
-                                <h4>Follow Us</h4>
-                                <div class="social-style-two">
-                                    <a href="http://facebook.com/noblecontracts"><i class="fab fa-facebook"></i></a>
-                                      <a href="http://twitter.com/noble_somto"><i class="fab fa-twitter"></i></a>
-                                      <a href="http://linkedin.com/somtochukwu-noble-ifejika"><i class="fab fa-linkedin"></i></a>
-                                      <a href="http://instagram.com/noblesomto"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                </form>
+            </div>
+            <div class="w-full lg:w-[calc(42%-1.5rem)]" data-reveal>
+                <div class="bg-surface-alt rounded-2xl p-8 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="contact-info-badge-v2"><i class="fal fa-map-marker-alt text-white"></i></div>
+                        <div>
+                            <span class="block text-ink/60 text-sm">Location</span>
+                            <b class="font-normal">Plot 3 hon Rufus Oyedepo Sangotedo, Lagos</b>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="contact-info-badge-v2"><i class="far fa-envelope-open-text text-white"></i></div>
+                        <div>
+                            <span class="block text-ink/60 text-sm">Email Address</span>
+                            <b class="font-normal block"><a href="mailto:info@nobleitservices.ng" class="hover:text-accent">info@nobleitservices.ng</a></b>
+                            <b class="font-normal block"><a href="/" class="hover:text-accent">www.nobleitservices.ng</a></b>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="contact-info-badge-v2"><i class="far fa-phone text-white"></i></div>
+                        <div>
+                            <span class="block text-ink/60 text-sm">Phone Number</span>
+                            <b class="font-normal block">Call <a href="callto:+2347031525786" class="hover:text-accent">(234) 703 152 5786</a></b>
+                            <b class="font-normal block">WhatsApp: +234 703 152 5786</b>
+                        </div>
+                    </div>
+                    <div class="pt-4 border-t border-border-soft">
+                        <h4 class="font-bold mb-3">Follow Us</h4>
+                        <div class="flex gap-3">
+                            <a href="https://facebook.com/noblecontracts" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social-v2"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com/noble_somto" target="_blank" rel="noopener" aria-label="Twitter" class="footer-social-v2"><i class="fab fa-twitter"></i></a>
+                            <a href="https://linkedin.com/in/somtochukwu-noble-ifejika" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-v2"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://instagram.com/noblesomto" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-v2"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Contact Us Page Area end -->
-
-<!-- Call to Action Area start -->
-<section class="call-to-action-area bgc-black pt-80 pb-50">
-    <div class="container">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-xl-7 col-lg-9">
-                <div class="section-title text-white mb-25 wow fadeInUp delay-0-2s">
-                    <h2>Let’s Design Your New Website</h2>
-                    <p>Do you want to have a website that stands out and impresses your clients? Then we are ready to help! Click the button below to contact us and discuss your ideas.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 text-lg-end">
-                <a href="contact-us" class="theme-btn style-two mb-30 wow fadeInUp delay-0-4s">Let’s Get Started <i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
     </div>
 </section>
+<!-- Contact Us Page Area end -->
+
+<!-- Call to Action Area start -->
+<section class="bg-ink text-white py-16">
+    <div class="container-nb flex flex-wrap items-center justify-between gap-8" data-reveal>
+        <div class="max-w-2xl">
+            <h2 class="text-2xl md:text-3xl font-bold">Let's Design Your New Website</h2>
+            <p class="mt-3 text-white/70">Do you want a website that stands out and impresses your clients? Tell us about your project and we'll help you shape it into something real.</p>
+        </div>
+        <a href="/start-a-project" class="theme-btn" style="background:transparent;border:1px solid #fff;">Start a Project <i class="fas fa-angle-double-right"></i></a>
+    </div>
+</section>
 <!-- Call to Action Area End -->
 
-@include('frontend.layouts.footer')
+@include('frontend.layouts.footer-v2')
