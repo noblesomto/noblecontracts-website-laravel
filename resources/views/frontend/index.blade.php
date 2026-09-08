@@ -273,21 +273,30 @@
 <section class="py-20 bg-surface-alt">
     <div class="container-nb">
         <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-            <span class="text-accent uppercase text-sm font-semibold">How We Build</span>
+            <div class="flex items-center justify-center gap-4 text-accent font-bold">
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+                <span class="underline underline-offset-4">How We Build</span>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
             <h2 class="text-3xl md:text-4xl font-bold mt-3">From Idea to Live Product</h2>
         </div>
         <div class="flex flex-wrap gap-6 justify-center">
             @foreach ([
-                ['icon' => 'flaticon-idea', 'title' => 'Discover', 'text' => 'Understand the business problem and goals.'],
-                ['icon' => 'flaticon-checklist', 'title' => 'Plan', 'text' => 'Scope features, architecture and timeline.'],
-                ['icon' => 'flaticon-graphic-design', 'title' => 'Design', 'text' => 'UI/UX that fits how the product will actually be used.'],
-                ['icon' => 'flaticon-coding-2', 'title' => 'Build', 'text' => 'Backend, frontend and APIs, built to scale.'],
-                ['icon' => 'flaticon-web-programming', 'title' => 'Integrate', 'text' => 'Payments, third-party services and AI where useful.'],
-                ['icon' => 'flaticon-startup', 'title' => 'Launch', 'text' => 'Ship to production with proper deployment &amp; monitoring.'],
-                ['icon' => 'flaticon-trophy', 'title' => 'Grow', 'text' => 'Improve, optimise and expand as the business grows.'],
+                ['icon' => 'flaticon-idea', 'title' => 'Discover', 'text' => 'Understand the business problem and goals.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-checklist', 'title' => 'Plan', 'text' => 'Scope features, architecture and timeline.', 'color' => '#06b6d4'],
+                ['icon' => 'flaticon-graphic-design', 'title' => 'Design', 'text' => 'UI/UX that fits how the product will actually be used.', 'color' => '#f59e0b'],
+                ['icon' => 'flaticon-coding-2', 'title' => 'Build', 'text' => 'Backend, frontend and APIs, built to scale.', 'color' => '#8b5cf6'],
+                ['icon' => 'flaticon-web-programming', 'title' => 'Integrate', 'text' => 'Payments, third-party services and AI where useful.', 'color' => '#3b82f6'],
+                ['icon' => 'flaticon-startup', 'title' => 'Launch', 'text' => 'Ship to production with proper deployment &amp; monitoring.', 'color' => '#06b6d4'],
+                ['icon' => 'flaticon-trophy', 'title' => 'Grow', 'text' => 'Improve, optimise and expand as the business grows.', 'color' => '#f59e0b'],
             ] as $step)
-            <div class="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] border border-border-soft rounded-lg p-6 bg-white" data-reveal>
-                <div class="text-3xl text-accent mb-4"><i class="{{ $step['icon'] }}"></i></div>
+            <div class="what-we-do-card text-center w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] lg:w-[calc(25%-1.125rem)] rounded-2xl p-8" style="background: color-mix(in srgb, {{ $step['color'] }} 8%, white);" data-reveal>
+                <div class="relative inline-flex mb-5">
+                    <div class="absolute -inset-3 rounded-full blur-xl opacity-50" style="background: {{ $step['color'] }};" aria-hidden="true"></div>
+                    <div class="relative w-16 h-16 rounded-2xl flex items-center justify-center" style="background: {{ $step['color'] }};">
+                        <i class="{{ $step['icon'] }} text-3xl text-white"></i>
+                    </div>
+                </div>
                 <h5 class="font-bold">{{ $step['title'] }}</h5>
                 <p class="mt-2 text-ink/70">{!! $step['text'] !!}</p>
             </div>
