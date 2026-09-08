@@ -239,7 +239,11 @@
 <section class="py-20">
     <div class="container-nb">
         <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-            <span class="text-accent uppercase text-sm font-semibold">What We Build With</span>
+            <div class="flex items-center justify-center gap-4 text-accent font-bold">
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+                <span class="underline underline-offset-4">What We Build With</span>
+                <i class="fas fa-ellipsis-h text-2xl"></i>
+            </div>
             <h2 class="text-3xl md:text-4xl font-bold mt-3">Our Technology Stack</h2>
         </div>
         <div class="flex flex-wrap gap-8">
@@ -253,7 +257,7 @@
             ] as $group)
             <div class="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)]" data-reveal>
                 <h5 class="font-bold text-lg mb-2">{{ $group['title'] }}</h5>
-                <ul class="space-y-1 text-ink/70">
+                <ul class="list-style-four text-ink/70">
                     @foreach ($group['items'] as $item)
                     <li>{{ $item }}</li>
                     @endforeach
