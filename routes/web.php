@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\QuoteController;
+use App\Http\Controllers\Admin\AdminAuthController;
+use App\Http\Controllers\Admin\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,3 +46,15 @@ Route::get('/thank-you', [QuoteController::class, 'thankYou'])->name('quote.than
 Route::post('/api/save-quote-step', [QuoteController::class, 'saveStep']);
 Route::get('/api/get-quote-draft/{token}', [QuoteController::class, 'getDraft']);
 Route::post('/api/submit-quote', [QuoteController::class, 'submit']);
+
+// Admin: quote leads
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AdminAuthController::class, 'login']);
+    Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+
+    Route::middleware('auth')->group(function () {
+        Route::get('/quotes', [AdminController::class, 'quotes'])->name('quotes.index');
+        Route::get('/quotes/{quoteDraft}', [AdminController::class, 'showQuote'])->name('quotes.show');
+    });
+});
