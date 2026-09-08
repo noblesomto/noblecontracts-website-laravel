@@ -26,27 +26,27 @@ tr:nth-child(even) {
 <table style="width:100%">
   <tr>
     <th>Name:</th>
-    <td>{{ $details['name'] }}</td>
+    <td>{{ $name }}</td>
   </tr>
 
   <tr>
     <th>Phone:</th>
-    <td>{{ $details['phone'] }}</td>
+    <td>{{ $phone }}</td>
   </tr>
   <tr>
     <th>Email:</th>
-    <td>{{ $details['email'] }}</td>
+    <td>{{ $email }}</td>
   </tr>
   <tr>
   
   <tr>
     <th>Subject:</th>
-    <td>{{ $details['subject'] }}</td>
+    <td>{{ $subject }}</td>
   </tr>
   
   <tr>
     <th>Message:</th>
-    <td>{{ $details['message'] }}</td>
+    <td>{{ $message }}</td>
   </tr>
 </table>
 

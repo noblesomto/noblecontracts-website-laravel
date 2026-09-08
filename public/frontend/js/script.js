@@ -68,7 +68,24 @@
                 $(this).children('.megamenu').stop(true, false, true).slideToggle(300);
             }
         });
-        
+
+        // Keyboard access: open/close the same dropdown on focus, so Tab-only
+        // users can reach it (the hover handler above only fires for a mouse).
+        navcollapse.on('focusin', function () {
+            if ($(window).innerWidth() >= mobileWidth) {
+                $(this).children('ul').stop(true, false, true).slideDown(300);
+            }
+        }).on('focusout', function () {
+            var el = this;
+            if ($(window).innerWidth() >= mobileWidth) {
+                setTimeout(function () {
+                    if (!$.contains(el, document.activeElement)) {
+                        $(el).children('ul').stop(true, false, true).slideUp(300);
+                    }
+                }, 0);
+            }
+        });
+
         // 03. Submenu Dropdown Toggle
         if ($('.main-header .navigation li.dropdown ul').length) {
             $('.main-header .navigation li.dropdown').append('<div class="dropdown-btn"><span class="fas fa-chevron-down"></span></div>');
@@ -552,7 +569,7 @@
         
         
         // 21. Nice Select
-        $('select').niceSelect();
+        $('select').not('.quote-wizard select').niceSelect();
         
         
         // 22. WOW Animation
