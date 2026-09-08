@@ -14,7 +14,7 @@
     button.type = 'button';
     button.className = 'whatsapp-widget-v2__button';
     button.setAttribute('aria-label', 'Chat with us on WhatsApp');
-    button.innerHTML = '<img src="' + mount.dataset.icon + '" alt="" width="28" height="28">';
+    button.innerHTML = '<img src="' + mount.dataset.icon + '" alt="">';
 
     var popup = document.createElement('div');
     popup.className = 'whatsapp-widget-v2__popup';
